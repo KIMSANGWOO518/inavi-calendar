@@ -9,7 +9,7 @@ import 'tippy.js/dist/tippy.css'
 
 const sampleEvents = [
   {
-    title: '부산 바다축제',
+    title: '부산 축제',
     date: '2025-06-25',
     extendedProps: {
       location: '해운대 해수욕장',
