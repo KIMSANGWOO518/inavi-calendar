@@ -18,7 +18,7 @@ const sampleEvents = [
     }
   },
   {
-    title: '서울 불꽃 축제',
+    title: '서울 한강 불꽃 축제',
     date: '2025-06-10',
     extendedProps: {
       location: '여의도 한강공원',
