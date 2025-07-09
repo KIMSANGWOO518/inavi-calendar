@@ -18,7 +18,7 @@ const sampleEvents = [
     }
   },
   {
-    title: '서울 한강 불꽃 축제',
+    title: '한강 불꽃 축제',
     date: '2025-06-10',
     extendedProps: {
       location: '여의도 한강공원',
@@ -55,9 +55,9 @@ export default function Home() {
 </a>`,
       allowHTML: true,
       placement: 'top',
-      delay: [0, 0],           // 👈 보여주기/숨기기 딜레이 제거
-      hideOnClick: true,       // 클릭 시 숨김
-      interactive: true,        // 마우스로 툴팁 내용 복사 가능
+      delay: [0, 0],           
+      hideOnClick: true,       
+      interactive: true,       
     });
 
 }}}
