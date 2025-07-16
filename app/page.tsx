@@ -36,12 +36,12 @@ export default function FestivalCalendar() {
         
         festivalsByDateMap[startDate].push(festival);
         
-        // FullCalendar 이벤트 생성 - 각 축제마다 하나씩
+        // FullCalendar 이벤트 생성 - 각 축제마다 하나씩 (end 속성 제거)
         calendarEvents.push({
           id: `festival-${index}`,
           title: festival.festival_name,
           start: startDate,
-          end: festival.end,
+          // end: festival.end, // 이 줄을 제거하면 막대가 사라집니다
           extendedProps: {
             region: festival.region,
             detailed_location: festival.detailed_location,
