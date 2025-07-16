@@ -23,45 +23,62 @@ export default function FestivalCalendar() {
       const response = await fetch(url);
       const data = await response.json();
       
-      // 날짜별로 축제 데이터 그룹화
+      // period를 기준으로 날짜별로 축제 데이터 그룹화
       const festivalsByDateMap = {};
-      const calendarEvents = [];
       
-      data.forEach((festival, index) => {
-        const startDate = festival.start;
-        
-        if (!festivalsByDateMap[startDate]) {
-          festivalsByDateMap[startDate] = [];
+      data.forEach((festival) => {
+        if (festival.period) {
+          // period에서 날짜 범위를 파싱
+          const dateRange = parsePeriodToDates(festival.period);
+          
+          dateRange.forEach(date => {
+            const dateStr = date.toISOString().split('T')[0];
+            
+            if (!festivalsByDateMap[dateStr]) {
+              festivalsByDateMap[dateStr] = [];
+            }
+            
+            festivalsByDateMap[dateStr].push(festival);
+          });
         }
-        
-        festivalsByDateMap[startDate].push(festival);
-        
-        // FullCalendar 이벤트 생성 - 각 축제마다 하나씩 (end 속성 제거)
-        calendarEvents.push({
-          id: `festival-${index}`,
-          title: festival.festival_name,
-          start: startDate,
-          // end: festival.end, // 이 줄을 제거하면 막대가 사라집니다
-          extendedProps: {
-            region: festival.region,
-            detailed_location: festival.detailed_location,
-            contact: festival.contact,
-            period: festival.period,
-            originalData: festival
-          },
-          backgroundColor: '#3B82F6',
-          borderColor: '#1E40AF',
-          textColor: '#FFFFFF'
-        });
       });
       
       setFestivalsByDate(festivalsByDateMap);
-      setEvents(calendarEvents);
+      setEvents([]); // 이벤트 표시 제거
       setLoading(false);
     } catch (error) {
       console.error('축제 데이터 로드 실패:', error);
       setLoading(false);
     }
+  };
+
+  // period 문자열을 파싱하여 날짜 배열로 변환
+  const parsePeriodToDates = (period) => {
+    const dates = [];
+    
+    // 다양한 period 형식 처리
+    if (period.includes('~')) {
+      // "2024-01-01 ~ 2024-01-03" 형식
+      const [startStr, endStr] = period.split('~').map(s => s.trim());
+      const startDate = new Date(startStr);
+      const endDate = new Date(endStr);
+      
+      if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+        const currentDate = new Date(startDate);
+        while (currentDate <= endDate) {
+          dates.push(new Date(currentDate));
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+      }
+    } else if (period.includes('-')) {
+      // "2024-01-01" 형식 (단일 날짜)
+      const date = new Date(period);
+      if (!isNaN(date.getTime())) {
+        dates.push(date);
+      }
+    }
+    
+    return dates;
   };
 
   const handleDateClick = (info) => {
@@ -97,19 +114,9 @@ export default function FestivalCalendar() {
         </div>
         {festivalsForDate && festivalsForDate.length > 0 && (
           <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelectedDate({
-                  date: dateStr,
-                  festivals: festivalsForDate
-                });
-                setShowModal(true);
-              }}
-              className="bg-blue-500 text-white text-xs px-2 py-1 rounded hover:bg-blue-600 transition-colors"
-            >
-              축제 {festivalsForDate.length}개
-            </button>
+            <div className="bg-blue-500 text-white text-xs px-2 py-1 rounded">
+              {festivalsForDate.length}
+            </div>
           </div>
         )}
       </div>
@@ -147,28 +154,8 @@ export default function FestivalCalendar() {
             right: 'dayGridMonth'
           }}
           locale="ko"
-          eventDisplay="block"
-          eventTextColor="#ffffff"
-          dayMaxEvents={2}
+          dayMaxEvents={false}
           moreLinkText="더보기"
-          
-          // 이벤트 호버 시 툴팁
-          eventDidMount={(info) => {
-            const { region, detailed_location, contact, period } = info.event.extendedProps;
-            if (region || detailed_location || contact) {
-              const tooltipContent = `
-                <div class="p-2">
-                  <strong>${info.event.title}</strong><br/>
-                  ${period ? `📅 ${period}<br/>` : ''}
-                  ${region ? `🏢 ${region}<br/>` : ''}
-                  ${detailed_location ? `📍 ${detailed_location}<br/>` : ''}
-                  ${contact ? `📞 ${contact}` : ''}
-                </div>
-              `;
-              
-              info.el.setAttribute('title', tooltipContent);
-            }
-          }}
         />
       </div>
 
