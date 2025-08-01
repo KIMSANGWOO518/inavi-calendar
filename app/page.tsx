@@ -12,6 +12,7 @@ export default function FestivalCalendar() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [currentViewDate, setCurrentViewDate] = useState(new Date());
 
   useEffect(() => {
     loadFestivalData();
@@ -103,24 +104,75 @@ export default function FestivalCalendar() {
     });
   };
 
+  // 현재 보여지는 월의 축제 통계 계산
+  const getCurrentMonthStats = () => {
+    const year = currentViewDate.getFullYear();
+    const month = currentViewDate.getMonth();
+    
+    let totalFestivals = 0;
+    let festivalDays = 0;
+    
+    // 해당 월의 모든 날짜 확인
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    
+    for (let day = 1; day <= daysInMonth; day++) {
+      const date = new Date(year, month, day);
+      const dateStr = date.toISOString().split('T')[0];
+      const festivalsForDate = festivalsByDate[dateStr];
+      
+      if (festivalsForDate && festivalsForDate.length > 0) {
+        totalFestivals += festivalsForDate.length;
+        festivalDays++;
+      }
+    }
+    
+    return { totalFestivals, festivalDays };
+  };
+
   const renderDayCellContent = (info) => {
     const dateStr = info.date.toISOString().split('T')[0];
     const festivalsForDate = festivalsByDate[dateStr];
+    const festivalCount = festivalsForDate ? festivalsForDate.length : 0;
     
     return (
-      <div className="relative h-full">
-        <div className="text-center">
+      <div className="h-full flex flex-col relative" style={{ minHeight: '100px' }}>
+        {/* 날짜 숫자 - 왼쪽 상단 */}
+        <div className="absolute top-1 left-0 font-medium text-gray-800 text-sm">
           {info.dayNumberText}
         </div>
-        {festivalsForDate && festivalsForDate.length > 0 && (
-          <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2">
-            <div className="bg-blue-500 text-white text-xs px-2 py-1 rounded">
-              {festivalsForDate.length}
+        
+        {/* 축제 정보 표시 영역 - 하단에 블럭으로 쌓기 */}
+        <div className="flex-1 flex flex-col px-8 py-8 pt-12 pb-0 -mb-8">
+          {festivalCount > 0 && (
+            <div className="space-y-1 mt-auto">
+              {/* 진행중 00건 */}
+              <div className="bg-blue-500 text-white text-xs text-center py-2 px-2 rounded border border-black font-medium">
+                진행중 {festivalCount}건
+              </div>
+              
+              {/* 상세정보 버튼 */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedDate({
+                    date: dateStr,
+                    festivals: festivalsForDate
+                  });
+                  setShowModal(true);
+                }}
+                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs text-center py-2 px-2 rounded border border-black transition-colors font-medium"
+              >
+                상세정보
+              </button>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     );
+  };
+
+  const handleDatesSet = (dateInfo) => {
+    setCurrentViewDate(dateInfo.view.currentStart);
   };
 
   if (loading) {
@@ -145,9 +197,9 @@ export default function FestivalCalendar() {
           editable={false}
           selectable={true}
           events={events}
-          dateClick={handleDateClick}
           dayCellContent={renderDayCellContent}
-          height="auto"
+          datesSet={handleDatesSet}
+          height={800}
           headerToolbar={{
             left: 'prev,next today',
             center: 'title',
