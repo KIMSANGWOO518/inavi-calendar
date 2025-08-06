@@ -20,7 +20,7 @@ export default function FestivalCalendar() {
 
   const loadFestivalData = async () => {
     try {
-      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/festival2.json';
+      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/festival3.json';
       const response = await fetch(url);
       const data = await response.json();
       
