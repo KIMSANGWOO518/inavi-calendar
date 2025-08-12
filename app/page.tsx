@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { Calendar, X, MapPin, Clock, Phone } from 'lucide-react';
+import { Calendar, X, MapPin, Clock, Phone, Link } from 'lucide-react';
 
 export default function FestivalCalendar() {
   const [events, setEvents] = useState([]);
@@ -20,7 +20,7 @@ export default function FestivalCalendar() {
 
   const loadFestivalData = async () => {
     try {
-      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/festival3.json';
+      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival4.json';
       const response = await fetch(url);
       const data = await response.json();
       
@@ -260,7 +260,21 @@ export default function FestivalCalendar() {
                       <div className="flex items-center">
                         <Phone size={16} className="mr-2 text-gray-500" />
                         <span>{festival.contact}</span>
-                      </div>
+                      </div>				
+                    )}
+        
+                    {festival.URL && (
+                      <div className="flex items-center">
+                        <Link size={16} className="mr-2 text-gray-500" />
+                        <a
+                          href={festival.URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 underline"
+                        >
+                          페이지로 이동
+                        </a>
+                      </div>	
                     )}
                   </div>
                 </div>
@@ -271,4 +285,4 @@ export default function FestivalCalendar() {
       )}
     </div>
   );
-}
+} 
