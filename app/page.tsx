@@ -6,10 +6,20 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import { Calendar, X, MapPin, Clock, Phone, Link } from 'lucide-react';
 
+// Festival 타입 정의
+interface Festival {
+  festival_name: string;
+  period?: string;
+  region?: string;
+  detailed_location?: string;
+  contact?: string;
+  URL?: string;
+}
+
 export default function FestivalCalendar() {
-  const [events, setEvents] = useState([]);
-  const [festivalsByDate, setFestivalsByDate] = useState({});
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [events, setEvents] = useState<any[]>([]);
+  const [festivalsByDate, setFestivalsByDate] = useState<{[key: string]: Festival[]}>({});
+  const [selectedDate, setSelectedDate] = useState<{date: string; festivals: Festival[]} | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(true);
   const [currentViewDate, setCurrentViewDate] = useState(new Date());
@@ -19,12 +29,12 @@ export default function FestivalCalendar() {
     try {
       const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival5.json';
       const response = await fetch(url);
-      const data = await response.json();
+      const data: Festival[] = await response.json();
       
       // period를 기준으로 날짜별로 축제 데이터 그룹화
-      const festivalsByDateMap = {};
+      const festivalsByDateMap: {[key: string]: Festival[]} = {};
       
-      data.forEach((festival) => {
+      data.forEach((festival: Festival) => {
         if (festival.period) {
           // period에서 날짜 범위를 파싱
           const dateRange = parsePeriodToDates(festival.period);
@@ -84,7 +94,7 @@ export default function FestivalCalendar() {
   };
 
   // handleDateClick 함수를 실제로 사용 (FullCalendar의 dateClick 이벤트에 연결)
-  const handleDateClick = (info) => {
+  const handleDateClick = (info: any) => {
     const dateStr = info.dateStr;
     const festivalsForDate = festivalsByDate[dateStr];
     
@@ -131,7 +141,7 @@ export default function FestivalCalendar() {
     return { totalFestivals, festivalDays };
   };
 
-  const renderDayCellContent = (info) => {
+  const renderDayCellContent = (info: any) => {
     const dateStr = info.date.toISOString().split('T')[0];
     const festivalsForDate = festivalsByDate[dateStr];
     const festivalCount = festivalsForDate ? festivalsForDate.length : 0;
@@ -173,7 +183,7 @@ export default function FestivalCalendar() {
     );
   };
 
-  const handleDatesSet = (dateInfo) => {
+  const handleDatesSet = (dateInfo: any) => {
     setCurrentViewDate(dateInfo.view.currentStart);
   };
 
