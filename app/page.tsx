@@ -24,6 +24,35 @@ export default function FestivalCalendar() {
   const [loading, setLoading] = useState(true);
   const [currentViewDate, setCurrentViewDate] = useState(new Date());
 
+  // period 문자열을 파싱하여 날짜 배열로 변환 (함수를 먼저 선언)
+  const parsePeriodToDates = (period: string): Date[] => {
+    const dates: Date[] = [];
+    
+    // 다양한 period 형식 처리
+    if (period.includes('~')) {
+      // "2024-01-01 ~ 2024-01-03" 형식
+      const [startStr, endStr] = period.split('~').map(s => s.trim());
+      const startDate = new Date(startStr);
+      const endDate = new Date(endStr);
+      
+      if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+        const currentDate = new Date(startDate);
+        while (currentDate <= endDate) {
+          dates.push(new Date(currentDate));
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+      }
+    } else if (period.includes('-')) {
+      // "2024-01-01" 형식 (단일 날짜)
+      const date = new Date(period);
+      if (!isNaN(date.getTime())) {
+        dates.push(date);
+      }
+    }
+    
+    return dates;
+  };
+
   // loadFestivalData를 useCallback으로 감싸서 의존성 문제 해결
   const loadFestivalData = useCallback(async () => {
     try {
@@ -63,35 +92,6 @@ export default function FestivalCalendar() {
   useEffect(() => {
     loadFestivalData();
   }, [loadFestivalData]); // loadFestivalData를 의존성에 추가
-
-  // period 문자열을 파싱하여 날짜 배열로 변환
-  const parsePeriodToDates = (period: string): Date[] => {
-    const dates: Date[] = [];
-    
-    // 다양한 period 형식 처리
-    if (period.includes('~')) {
-      // "2024-01-01 ~ 2024-01-03" 형식
-      const [startStr, endStr] = period.split('~').map(s => s.trim());
-      const startDate = new Date(startStr);
-      const endDate = new Date(endStr);
-      
-      if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
-        const currentDate = new Date(startDate);
-        while (currentDate <= endDate) {
-          dates.push(new Date(currentDate));
-          currentDate.setDate(currentDate.getDate() + 1);
-        }
-      }
-    } else if (period.includes('-')) {
-      // "2024-01-01" 형식 (단일 날짜)
-      const date = new Date(period);
-      if (!isNaN(date.getTime())) {
-        dates.push(date);
-      }
-    }
-    
-    return dates;
-  };
 
   // handleDateClick 함수를 실제로 사용 (FullCalendar의 dateClick 이벤트에 연결)
   const handleDateClick = (info: any) => {
