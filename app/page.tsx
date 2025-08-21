@@ -16,6 +16,35 @@ interface Festival {
   URL?: string;
 }
 
+// period 문자열을 파싱하여 날짜 배열로 변환 (컴포넌트 외부에 선언)
+const parsePeriodToDates = (period: string): Date[] => {
+  const dates: Date[] = [];
+  
+  // 다양한 period 형식 처리
+  if (period.includes('~')) {
+    // "2024-01-01 ~ 2024-01-03" 형식
+    const [startStr, endStr] = period.split('~').map((s: string) => s.trim());
+    const startDate = new Date(startStr);
+    const endDate = new Date(endStr);
+    
+    if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
+      const currentDate = new Date(startDate);
+      while (currentDate <= endDate) {
+        dates.push(new Date(currentDate));
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+    }
+  } else if (period.includes('-')) {
+    // "2024-01-01" 형식 (단일 날짜)
+    const date = new Date(period);
+    if (!isNaN(date.getTime())) {
+      dates.push(date);
+    }
+  }
+  
+  return dates;
+};
+
 export default function FestivalCalendar() {
   const [events, setEvents] = useState<any[]>([]);
   const [festivalsByDate, setFestivalsByDate] = useState<{[key: string]: Festival[]}>({});
@@ -23,35 +52,6 @@ export default function FestivalCalendar() {
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(true);
   const [currentViewDate, setCurrentViewDate] = useState(new Date());
-
-  // period 문자열을 파싱하여 날짜 배열로 변환 (함수를 먼저 선언)
-  const parsePeriodToDates = (period: string): Date[] => {
-    const dates: Date[] = [];
-    
-    // 다양한 period 형식 처리
-    if (period.includes('~')) {
-      // "2024-01-01 ~ 2024-01-03" 형식
-      const [startStr, endStr] = period.split('~').map(s => s.trim());
-      const startDate = new Date(startStr);
-      const endDate = new Date(endStr);
-      
-      if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
-        const currentDate = new Date(startDate);
-        while (currentDate <= endDate) {
-          dates.push(new Date(currentDate));
-          currentDate.setDate(currentDate.getDate() + 1);
-        }
-      }
-    } else if (period.includes('-')) {
-      // "2024-01-01" 형식 (단일 날짜)
-      const date = new Date(period);
-      if (!isNaN(date.getTime())) {
-        dates.push(date);
-      }
-    }
-    
-    return dates;
-  };
 
   // loadFestivalData를 useCallback으로 감싸서 의존성 문제 해결
   const loadFestivalData = useCallback(async () => {
@@ -68,7 +68,7 @@ export default function FestivalCalendar() {
           // period에서 날짜 범위를 파싱
           const dateRange = parsePeriodToDates(festival.period);
           
-          dateRange.forEach(date => {
+          dateRange.forEach((date: Date) => {
             const dateStr = date.toISOString().split('T')[0];
             
             if (!festivalsByDateMap[dateStr]) {
@@ -164,7 +164,7 @@ export default function FestivalCalendar() {
               
               {/* 상세정보 버튼 */}
               <button
-                onClick={(e) => {
+                onClick={(e: React.MouseEvent) => {
                   e.stopPropagation();
                   setSelectedDate({
                     date: dateStr,
@@ -221,7 +221,7 @@ export default function FestivalCalendar() {
           selectable={true}
           events={events}
           dayCellContent={renderDayCellContent}
-          dateClick={handleDateClick} // handleDateClick 함수 사용
+          dateClick={handleDateClick}
           datesSet={handleDatesSet}
           height={800}
           headerToolbar={{
@@ -252,7 +252,7 @@ export default function FestivalCalendar() {
             </div>
             
             <div className="p-4 space-y-4">
-              {selectedDate.festivals.map((festival, index) => (
+              {selectedDate.festivals.map((festival: Festival, index: number) => (
                 <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
                   <h3 className="font-semibold text-lg text-gray-800 mb-2">
                     {festival.festival_name}
