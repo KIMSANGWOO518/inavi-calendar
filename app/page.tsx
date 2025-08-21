@@ -65,8 +65,8 @@ export default function FestivalCalendar() {
   }, [loadFestivalData]); // loadFestivalData를 의존성에 추가
 
   // period 문자열을 파싱하여 날짜 배열로 변환
-  const parsePeriodToDates = (period) => {
-    const dates = [];
+  const parsePeriodToDates = (period: string): Date[] => {
+    const dates: Date[] = [];
     
     // 다양한 period 형식 처리
     if (period.includes('~')) {
@@ -107,7 +107,7 @@ export default function FestivalCalendar() {
     }
   };
 
-  const formatDate = (dateStr) => {
+  const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
     return date.toLocaleDateString('ko-KR', {
       year: 'numeric',
