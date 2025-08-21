@@ -46,7 +46,7 @@ const parsePeriodToDates = (period: string): Date[] => {
 };
 
 export default function FestivalCalendar() {
-  const [events, setEvents] = useState<any[]>([]);
+  const [events, setEvents] = useState<never[]>([]);
   const [festivalsByDate, setFestivalsByDate] = useState<{[key: string]: Festival[]}>({});
   const [selectedDate, setSelectedDate] = useState<{date: string; festivals: Festival[]} | null>(null);
   const [showModal, setShowModal] = useState(false);
@@ -94,7 +94,7 @@ export default function FestivalCalendar() {
   }, [loadFestivalData]); // loadFestivalData를 의존성에 추가
 
   // handleDateClick 함수를 실제로 사용 (FullCalendar의 dateClick 이벤트에 연결)
-  const handleDateClick = (info: any) => {
+  const handleDateClick = (info: { dateStr: string }) => {
     const dateStr = info.dateStr;
     const festivalsForDate = festivalsByDate[dateStr];
     
@@ -141,7 +141,7 @@ export default function FestivalCalendar() {
     return { totalFestivals, festivalDays };
   };
 
-  const renderDayCellContent = (info: any) => {
+  const renderDayCellContent = (info: { date: Date; dayNumberText: string }) => {
     const dateStr = info.date.toISOString().split('T')[0];
     const festivalsForDate = festivalsByDate[dateStr];
     const festivalCount = festivalsForDate ? festivalsForDate.length : 0;
@@ -183,7 +183,7 @@ export default function FestivalCalendar() {
     );
   };
 
-  const handleDatesSet = (dateInfo: any) => {
+  const handleDatesSet = (dateInfo: { view: { currentStart: Date } }) => {
     setCurrentViewDate(dateInfo.view.currentStart);
   };
 
