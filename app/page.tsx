@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
@@ -14,11 +14,8 @@ export default function FestivalCalendar() {
   const [loading, setLoading] = useState(true);
   const [currentViewDate, setCurrentViewDate] = useState(new Date());
 
-  useEffect(() => {
-    loadFestivalData();
-  }, []);
-
-  const loadFestivalData = async () => {
+  // loadFestivalData를 useCallback으로 감싸서 의존성 문제 해결
+  const loadFestivalData = useCallback(async () => {
     try {
       const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival5.json';
       const response = await fetch(url);
@@ -51,7 +48,11 @@ export default function FestivalCalendar() {
       console.error('축제 데이터 로드 실패:', error);
       setLoading(false);
     }
-  };
+  }, []); // 의존성 배열 추가
+
+  useEffect(() => {
+    loadFestivalData();
+  }, [loadFestivalData]); // loadFestivalData를 의존성에 추가
 
   // period 문자열을 파싱하여 날짜 배열로 변환
   const parsePeriodToDates = (period) => {
@@ -82,6 +83,7 @@ export default function FestivalCalendar() {
     return dates;
   };
 
+  // handleDateClick 함수를 실제로 사용 (FullCalendar의 dateClick 이벤트에 연결)
   const handleDateClick = (info) => {
     const dateStr = info.dateStr;
     const festivalsForDate = festivalsByDate[dateStr];
@@ -104,7 +106,7 @@ export default function FestivalCalendar() {
     });
   };
 
-  // 현재 보여지는 월의 축제 통계 계산
+  // getCurrentMonthStats 함수를 실제로 사용 (통계 표시용)
   const getCurrentMonthStats = () => {
     const year = currentViewDate.getFullYear();
     const month = currentViewDate.getMonth();
@@ -175,6 +177,9 @@ export default function FestivalCalendar() {
     setCurrentViewDate(dateInfo.view.currentStart);
   };
 
+  // 현재 월 통계 가져오기
+  const monthStats = getCurrentMonthStats();
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -190,6 +195,14 @@ export default function FestivalCalendar() {
         <h1 className="text-3xl font-bold text-gray-800">축제 캘린더</h1>
       </div>
       
+      {/* 월별 통계 표시 (getCurrentMonthStats 함수 사용) */}
+      <div className="mb-4 p-4 bg-blue-50 rounded-lg">
+        <p className="text-sm text-gray-700">
+          이번 달 축제: <span className="font-semibold">{monthStats.totalFestivals}개</span> 
+          ({monthStats.festivalDays}일간 진행)
+        </p>
+      </div>
+      
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
@@ -198,6 +211,7 @@ export default function FestivalCalendar() {
           selectable={true}
           events={events}
           dayCellContent={renderDayCellContent}
+          dateClick={handleDateClick} // handleDateClick 함수 사용
           datesSet={handleDatesSet}
           height={800}
           headerToolbar={{
@@ -285,4 +299,4 @@ export default function FestivalCalendar() {
       )}
     </div>
   );
-} 
+}
