@@ -37,7 +37,9 @@ function LoginForm({ onLogin }: { onLogin: (username: string) => void }) {
       } else if (username === 'poi_2025' && password === '1234') {
         onLogin(username);
       } else if (username === 'dynamic_2025' && password === '1234') {
-        onLogin(username);        
+        onLogin(username);
+      } else if (username === 'gis_2025' && password === '1234') {
+        onLogin(username);
       } else {
         setError('아이디 또는 비밀번호가 올바르지 않습니다.');
       }
