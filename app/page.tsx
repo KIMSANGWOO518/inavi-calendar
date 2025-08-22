@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { Calendar, X, MapPin, Clock, Phone, Link } from 'lucide-react';
+import { X, MapPin, Clock, Phone, Link } from 'lucide-react';
 
 // Festival 타입 정의
 interface Festival {
@@ -208,10 +208,19 @@ export default function FestivalCalendar() {
     }}>
       <div className="p-4 max-w-6xl mx-auto">
         <div className="flex items-center mb-6">
-          <Calendar className="mr-2 text-blue-600" size={32} />
+          <img 
+            src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo2.png" 
+            alt="iNavi Logo" 
+            className="mr-2 w-8 h-8 object-contain"
+            onError={(e) => {
+              console.error('이미지 로드 실패:', e);
+              // 이미지 로드 실패 시 대체 이미지나 텍스트 표시
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
           <h1 className="text-3xl font-bold text-gray-800">축제 캘린더</h1>
-        </div>        
-        
+        </div>
+
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <FullCalendar
             plugins={[dayGridPlugin, interactionPlugin]}
