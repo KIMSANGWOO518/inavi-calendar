@@ -200,114 +200,113 @@ export default function FestivalCalendar() {
   }
 
   return (
-    <div className="p-4 max-w-6xl mx-auto">
-      <div className="flex items-center mb-6">
-        <Calendar className="mr-2 text-blue-600" size={32} />
-        <h1 className="text-3xl font-bold text-gray-800">축제 캘린더</h1>
-      </div>
-      
-      {/* 월별 통계 표시 (getCurrentMonthStats 함수 사용) */}
-      <div className="mb-4 p-4 bg-blue-50 rounded-lg">
-        <p className="text-sm text-gray-700">
-          이번 달 축제: <span className="font-semibold">{monthStats.totalFestivals}개</span> 
-          ({monthStats.festivalDays}일간 진행)
-        </p>
-      </div>
-      
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <FullCalendar
-          plugins={[dayGridPlugin, interactionPlugin]}
-          initialView="dayGridMonth"
-          editable={false}
-          selectable={true}
-          events={events}
-          dayCellContent={renderDayCellContent}
-          dateClick={handleDateClick}
-          datesSet={handleDatesSet}
-          height={800}
-          headerToolbar={{
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth'
-          }}
-          locale="ko"
-          dayMaxEvents={false}
-          moreLinkText="더보기"
-        />
-      </div>
-
-      {/* 축제 목록 모달 */}
-      {showModal && selectedDate && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-            <div className="flex justify-between items-center p-4 border-b">
-              <h2 className="text-xl font-bold text-gray-800">
-                {formatDate(selectedDate.date)} 축제 목록
-              </h2>
-              <button
-                onClick={() => setShowModal(false)}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                <X size={24} />
-              </button>
-            </div>
-            
-            <div className="p-4 space-y-4">
-              {selectedDate.festivals.map((festival: Festival, index: number) => (
-                <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    {festival.festival_name}
-                  </h3>
-                  
-                  <div className="space-y-2 text-sm text-gray-600">
-                    {festival.period && (
-                      <div className="flex items-center">
-                        <Clock size={16} className="mr-2 text-gray-500" />
-                        <span>{festival.period}</span>
-                      </div>
-                    )}
-
-                    {festival.region && (
-                      <div className="flex items-center">
-                        <MapPin size={16} className="mr-2 text-gray-500" />
-                        <span>{festival.region}</span>
-                      </div>
-                    )}
-                    
-                    {festival.detailed_location && (
-                      <div className="flex items-start">
-                        <MapPin size={16} className="mr-2 text-gray-500 mt-0.5" />
-                        <span>{festival.detailed_location}</span>
-                      </div>
-                    )}
-                    
-                    {festival.contact && (
-                      <div className="flex items-center">
-                        <Phone size={16} className="mr-2 text-gray-500" />
-                        <span>{festival.contact}</span>
-                      </div>				
-                    )}
+    <div style={{ 
+      transform: 'scale(1.0)', 
+      transformOrigin: 'center',
+      width: '100%',
+      height: '100%'
+    }}>
+      <div className="p-4 max-w-6xl mx-auto">
+        <div className="flex items-center mb-6">
+          <Calendar className="mr-2 text-blue-600" size={32} />
+          <h1 className="text-3xl font-bold text-gray-800">축제 캘린더</h1>
+        </div>        
         
-                    {festival.URL && (
-                      <div className="flex items-center">
-                        <Link size={16} className="mr-2 text-gray-500" />
-                        <a
-                          href={festival.URL}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-600 underline"
-                        >
-                          페이지로 이동
-                        </a>
-                      </div>	
-                    )}
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <FullCalendar
+            plugins={[dayGridPlugin, interactionPlugin]}
+            initialView="dayGridMonth"
+            editable={false}
+            selectable={true}
+            events={events}
+            dayCellContent={renderDayCellContent}
+            dateClick={handleDateClick}
+            datesSet={handleDatesSet}
+            height={800}
+            headerToolbar={{
+              left: 'prev,next today',
+              center: 'title',
+              right: 'dayGridMonth'
+            }}
+            locale="ko"
+            dayMaxEvents={false}
+            moreLinkText="더보기"
+          />
+        </div>
+
+        {/* 축제 목록 모달 */}
+        {showModal && selectedDate && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+              <div className="flex justify-between items-center p-4 border-b">
+                <h2 className="text-xl font-bold text-gray-800">
+                  {formatDate(selectedDate.date)} 축제 목록
+                </h2>
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <X size={24} />
+                </button>
+              </div>
+              
+              <div className="p-4 space-y-4">
+                {selectedDate.festivals.map((festival: Festival, index: number) => (
+                  <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                    <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                      {festival.festival_name}
+                    </h3>
+                    
+                    <div className="space-y-2 text-sm text-gray-600">
+                      {festival.period && (
+                        <div className="flex items-center">
+                          <Clock size={16} className="mr-2 text-gray-500" />
+                          <span>{festival.period}</span>
+                        </div>
+                      )}
+
+                      {festival.region && (
+                        <div className="flex items-center">
+                          <MapPin size={16} className="mr-2 text-gray-500" />
+                          <span>{festival.region}</span>
+                        </div>
+                      )}
+                      
+                      {festival.detailed_location && (
+                        <div className="flex items-start">
+                          <MapPin size={16} className="mr-2 text-gray-500 mt-0.5" />
+                          <span>{festival.detailed_location}</span>
+                        </div>
+                      )}
+                      
+                      {festival.contact && (
+                        <div className="flex items-center">
+                          <Phone size={16} className="mr-2 text-gray-500" />
+                          <span>{festival.contact}</span>
+                        </div>				
+                      )}
+          
+                      {festival.URL && (
+                        <div className="flex items-center">
+                          <Link size={16} className="mr-2 text-gray-500" />
+                          <a
+                            href={festival.URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 underline"
+                          >
+                            페이지로 이동
+                          </a>
+                        </div>	
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
