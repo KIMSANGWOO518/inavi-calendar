@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { X, MapPin, Clock, Phone, Link } from 'lucide-react';
+import { X, MapPin, Clock, Phone, Link, User, Lock, LogOut } from 'lucide-react';
 
 // Festival 타입 정의
 interface Festival {
@@ -17,13 +17,113 @@ interface Festival {
   URL?: string;
 }
 
-// period 문자열을 파싱하여 날짜 배열로 변환 (컴포넌트 외부에 선언)
+// 로그인 컴포넌트
+function LoginForm({ onLogin }: { onLogin: (username: string) => void }) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError('');
+    setIsLoading(true);
+
+    // 여기서 실제 인증 로직을 구현합니다
+    // 예시: 간단한 하드코딩된 인증 (실제로는 API 호출)
+    setTimeout(() => {
+      if (username === 'test_2025' && password === '1234') {
+        onLogin(username);
+      } else if (username === 'poi_2025' && password === '1234') {
+        onLogin(username);
+      } else if (username === 'dynamic_2025' && password === '1234') {
+        onLogin(username);        
+      } else {
+        setError('아이디 또는 비밀번호가 올바르지 않습니다.');
+      }
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+      <div className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md">
+        <div className="flex justify-center mb-8">
+          <img 
+            src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo.png" 
+            alt="iNavi Logo" 
+            className="h-16 object-contain"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        </div>
+        
+        <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+          공간플랫폼개발그룹<br />축제달력 로그인
+        </h2>
+        
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              <User className="inline w-4 h-4 mr-1" />
+              아이디
+            </label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="아이디를 입력하세요"
+              required
+              disabled={isLoading}
+            />
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              <Lock className="inline w-4 h-4 mr-1" />
+              비밀번호
+            </label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="비밀번호를 입력하세요"
+              required
+              disabled={isLoading}
+            />
+          </div>
+          
+          {error && (
+            <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-2 rounded-lg text-sm">
+              {error}
+            </div>
+          )}
+          
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isLoading ? '로그인 중...' : '로그인'}
+          </button>
+        </form>
+        
+        <div className="mt-6 text-right text-sm text-gray-500">
+          <p>이용문의: Dynamic팀 김상우</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// period 문자열을 파싱하여 날짜 배열로 변환
 const parsePeriodToDates = (period: string): Date[] => {
   const dates: Date[] = [];
   
-  // 다양한 period 형식 처리
   if (period.includes('~')) {
-    // "2024-01-01 ~ 2024-01-03" 형식
     const [startStr, endStr] = period.split('~').map((s: string) => s.trim());
     const startDate = new Date(startStr);
     const endDate = new Date(endStr);
@@ -36,7 +136,6 @@ const parsePeriodToDates = (period: string): Date[] => {
       }
     }
   } else if (period.includes('-')) {
-    // "2024-01-01" 형식 (단일 날짜)
     const date = new Date(period);
     if (!isNaN(date.getTime())) {
       dates.push(date);
@@ -46,7 +145,8 @@ const parsePeriodToDates = (period: string): Date[] => {
   return dates;
 };
 
-export default function FestivalCalendar() {
+// 메인 캘린더 컴포넌트
+function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: string; onLogout: () => void }) {
   const [events, setEvents] = useState<never[]>([]);
   const [festivalsByDate, setFestivalsByDate] = useState<{[key: string]: Festival[]}>({});
   const [selectedDate, setSelectedDate] = useState<{date: string; festivals: Festival[]} | null>(null);
@@ -54,19 +154,16 @@ export default function FestivalCalendar() {
   const [loading, setLoading] = useState(true);
   const [currentViewDate, setCurrentViewDate] = useState(new Date());
 
-  // loadFestivalData를 useCallback으로 감싸서 의존성 문제 해결
   const loadFestivalData = useCallback(async () => {
     try {
       const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival5.json';
       const response = await fetch(url);
       const data: Festival[] = await response.json();
       
-      // period를 기준으로 날짜별로 축제 데이터 그룹화
       const festivalsByDateMap: {[key: string]: Festival[]} = {};
       
       data.forEach((festival: Festival) => {
         if (festival.period) {
-          // period에서 날짜 범위를 파싱
           const dateRange = parsePeriodToDates(festival.period);
           
           dateRange.forEach((date: Date) => {
@@ -82,19 +179,18 @@ export default function FestivalCalendar() {
       });
       
       setFestivalsByDate(festivalsByDateMap);
-      setEvents([]); // 이벤트 표시 제거
+      setEvents([]);
       setLoading(false);
     } catch (error) {
       console.error('축제 데이터 로드 실패:', error);
       setLoading(false);
     }
-  }, []); // 의존성 배열 추가
+  }, []);
 
   useEffect(() => {
     loadFestivalData();
-  }, [loadFestivalData]); // loadFestivalData를 의존성에 추가
+  }, [loadFestivalData]);
 
-  // handleDateClick 함수를 실제로 사용 (FullCalendar의 dateClick 이벤트에 연결)
   const handleDateClick = (info: { dateStr: string }) => {
     const dateStr = info.dateStr;
     const festivalsForDate = festivalsByDate[dateStr];
@@ -117,7 +213,6 @@ export default function FestivalCalendar() {
     });
   };
 
-  // getCurrentMonthStats 함수를 실제로 사용 (통계 표시용)
   const getCurrentMonthStats = () => {
     const year = currentViewDate.getFullYear();
     const month = currentViewDate.getMonth();
@@ -125,7 +220,6 @@ export default function FestivalCalendar() {
     let totalFestivals = 0;
     let festivalDays = 0;
     
-    // 해당 월의 모든 날짜 확인
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     
     for (let day = 1; day <= daysInMonth; day++) {
@@ -149,21 +243,17 @@ export default function FestivalCalendar() {
     
     return (
       <div className="h-full flex flex-col relative" style={{ minHeight: '100px' }}>
-        {/* 날짜 숫자 - 왼쪽 상단 */}
         <div className="absolute top-1 left-0 font-medium text-gray-800 text-sm">
           {info.dayNumberText}
         </div>
         
-        {/* 축제 정보 표시 영역 - 하단에 블럭으로 쌓기 */}
         <div className="flex-1 flex flex-col px-8 py-8 pt-12 pb-0 -mb-8">
           {festivalCount > 0 && (
             <div className="space-y-1 mt-auto">
-              {/* 진행중 00건 */}
               <div className="bg-blue-500 text-white text-xs text-center py-2 px-2 rounded border border-black font-medium">
                 진행중 {festivalCount}건
               </div>
               
-              {/* 상세정보 버튼 */}
               <button
                 onClick={(e: React.MouseEvent) => {
                   e.stopPropagation();
@@ -188,7 +278,6 @@ export default function FestivalCalendar() {
     setCurrentViewDate(dateInfo.view.currentStart);
   };
 
-  // 현재 월 통계 가져오기
   const monthStats = getCurrentMonthStats();
 
   if (loading) {
@@ -207,18 +296,34 @@ export default function FestivalCalendar() {
       height: '100%'
     }}>
       <div className="p-4 max-w-6xl mx-auto">
-        <div className="flex items-center mb-6">
-          <img 
-            src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo2.png" 
-            alt="iNavi Logo" 
-            className="mr-2 w-8 h-8 object-contain"
-            onError={(e) => {
-              console.error('이미지 로드 실패:', e);
-              // 이미지 로드 실패 시 대체 이미지나 텍스트 표시
-              (e.target as HTMLImageElement).style.display = 'none';
-            }}
-          />
-          <h1 className="text-3xl font-bold text-gray-800">축제 캘린더</h1>
+        {/* 헤더에 로그아웃 버튼 추가 */}
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center">
+            <img 
+              src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo.png" 
+              alt="iNavi Logo" 
+              className="mr-2 w-30 h-30 object-contain"
+              onError={(e) => {
+                console.error('이미지 로드 실패:', e);
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+            <h1 className="text-3xl font-bold text-gray-800">공간플랫폼개발그룹 축제달력</h1>
+          </div>
+          
+          <div className="flex items-center gap-4">
+            <span className="text-sm text-gray-600">
+              <User className="inline w-4 h-4 mr-1" />
+              {currentUser}님
+            </span>
+            <button
+              onClick={onLogout}
+              className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition text-sm font-medium text-gray-700"
+            >
+              <LogOut className="w-4 h-4" />
+              로그아웃
+            </button>
+          </div>
         </div>
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -318,4 +423,40 @@ export default function FestivalCalendar() {
       </div>
     </div>
   );
+}
+
+// 메인 컴포넌트
+export default function FestivalCalendar() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [currentUser, setCurrentUser] = useState<string>('');
+
+  // 컴포넌트 마운트 시 로컬스토리지에서 인증 상태 확인
+  useEffect(() => {
+    const savedUser = sessionStorage.getItem('currentUser');
+    if (savedUser) {
+      setCurrentUser(savedUser);
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  const handleLogin = (username: string) => {
+    setCurrentUser(username);
+    setIsAuthenticated(true);
+    // 세션스토리지에 저장 (브라우저 탭 닫으면 자동 로그아웃)
+    sessionStorage.setItem('currentUser', username);
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    setCurrentUser('');
+    sessionStorage.removeItem('currentUser');
+  };
+
+  // 인증되지 않은 경우 로그인 폼 표시
+  if (!isAuthenticated) {
+    return <LoginForm onLogin={handleLogin} />;
+  }
+
+  // 인증된 경우 캘린더 표시
+  return <FestivalCalendarContent currentUser={currentUser} onLogout={handleLogout} />;
 }
