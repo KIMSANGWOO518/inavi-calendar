@@ -258,7 +258,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
 
   const loadFestivalData = useCallback(async () => {
     try {
-      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival5.json';
+      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival.json';
       const response = await fetch(url);
       const data: Festival[] = await response.json();
       

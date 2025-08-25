@@ -1,15 +1,5 @@
 [
   {
-    "festival_name": "한강페스티벌",
-    "period": "2025-07-26~2025-08-24",
-    "start": "2025-07-26",
-    "end": "2025-08-24",
-    "region": "서울 송파구",
-    "detailed_location": "서울특별시 송파구 한가람로 65 (잠실동) 잠실동1-1등",
-    "contact": "02-120",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=ddee73b5-d818-4d73-b06e-8d5294df701b&cntntsNm=%ED%95%9C%EA%B0%95%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C"
-  },
-  {
     "festival_name": "제민천 밤페스타",
     "period": "2025-07-05~2025-12-06",
     "start": "2025-07-05",
@@ -50,74 +40,34 @@
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=64a51ed2-7f5d-473d-b578-36a27ee35de0&cntntsNm=%EC%BC%80%EB%AF%B8%EC%8A%A4%ED%8A%B8%EB%A6%BF%ED%8C%9D%EC%97%85"
   },
   {
-    "festival_name": "광복 80년 기념 빛 축제",
-    "period": "2025-08-15~2025-08-23",
-    "start": "2025-08-15",
-    "end": "2025-08-23",
-    "region": "서울 종로구",
-    "detailed_location": "서울특별시 종로구 세종대로 지하172 (세종로) 서울 광화문 일대",
-    "contact": "044-202-5539",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=bcaf095a-f26a-47b1-aaaf-92eb48be6872&cntntsNm=%EA%B4%91%EB%B3%B580%EB%85%84%EA%B8%B0%EB%85%90%EB%B9%9B%EC%B6%95%EC%A0%9C"
+    "festival_name": "고메 잇 강남 서울야장",
+    "period": "2025-08-17~2025-08-31",
+    "start": "2025-08-17",
+    "end": "2025-08-31",
+    "region": "서울 강남구",
+    "detailed_location": "서울특별시 강남구 영동대로 513 (삼성동) 코엑스 동측광장",
+    "contact": "070-7734-7796",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=013783e6-09c4-46a2-bf05-35219cef7b4f&cntntsNm=%EA%B3%A0%EB%A9%94%EC%9E%87%EA%B0%95%EB%82%A8%EC%84%9C%EC%9A%B8%EC%95%BC%EC%9E%A5"
   },
   {
-    "festival_name": "홍성남당항 대하축제",
-    "period": "2025-08-22~2025-10-20",
-    "start": "2025-08-22",
-    "end": "2025-10-20",
-    "region": "충청남도 홍성군",
-    "detailed_location": "충청남도 홍성군 서부면 남당항로213번길 1-1 홍성남당항 일원",
-    "contact": "010-5433-8196",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=22b32ddd-8323-4e9f-980b-d7e08e2bfd5f&cntntsNm=%ED%99%8D%EC%84%B1%EB%82%A8%EB%8B%B9%ED%95%AD%EB%8C%80%ED%95%98%EC%B6%95%EC%A0%9C"
+    "festival_name": "서울라이트 DDP 가을",
+    "period": "2025-08-28~2025-09-07",
+    "start": "2025-08-28",
+    "end": "2025-09-07",
+    "region": "서울 중구",
+    "detailed_location": "서울특별시 중구 을지로 281 (을지로7가) ",
+    "contact": "02-2153-0000",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=53a97d85-aab6-43f4-bff0-1b1ec4a9c42f&cntntsNm=%EC%84%9C%EC%9A%B8%EB%9D%BC%EC%9D%B4%ED%8A%B8DDP%EA%B0%80%EC%9D%84"
   },
   {
-    "festival_name": "군산 국가유산 야행",
-    "period": "2025-08-22~2025-08-30",
-    "start": "2025-08-22",
-    "end": "2025-08-30",
-    "region": "전북특별자치도 군산시",
-    "detailed_location": "전북특별자치도 군산시 구영2길 43 (영화동) 군산 원도심 국가유산 일원",
-    "contact": "063-453-2447",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=9c61604a-7abf-4397-a916-8b6d64a70447&cntntsNm=%EA%B5%B0%EC%82%B0%EA%B5%AD%EA%B0%80%EC%9C%A0%EC%82%B0%EC%95%BC%ED%96%89"
-  },
-  {
-    "festival_name": "생생우리음악축제",
-    "period": "2025-08-22~2025-08-24",
-    "start": "2025-08-22",
-    "end": "2025-08-24",
-    "region": "경기도 화성시",
-    "detailed_location": "경기도 화성시 봉담읍 상리 22-10",
-    "contact": "031-236-7103",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=bdc67d69-8725-4cd6-b95f-b5eeee28e118&cntntsNm=%EC%83%9D%EC%83%9D%EC%9A%B0%EB%A6%AC%EC%9D%8C%EC%95%85%EC%B6%95%EC%A0%9C"
-  },
-  {
-    "festival_name": "울산 남구 국가유산 야행 남포월명",
-    "period": "2025-08-22~2025-08-23",
-    "start": "2025-08-22",
-    "end": "2025-08-23",
-    "region": "울산 남구",
-    "detailed_location": "울산광역시 남구 성암동 308 개운포 경상좌수영성 및 처용공원 일원",
-    "contact": "070-7656-0456",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=89007373-f802-4239-aa78-2a3a8c4d5b82&cntntsNm=%EC%9A%B8%EC%82%B0%EB%82%A8%EA%B5%AC%EA%B5%AD%EA%B0%80%EC%9C%A0%EC%82%B0%EC%95%BC%ED%96%89%EB%82%A8%ED%8F%AC%EC%9B%94%EB%AA%85"
-  },
-  {
-    "festival_name": "고창해풍고추축제",
-    "period": "2025-08-23~2025-08-24",
-    "start": "2025-08-23",
-    "end": "2025-08-24",
-    "region": "전북특별자치도 고창군",
-    "detailed_location": "전북특별자치도 고창군 고창읍 녹두로 1265 ",
-    "contact": "063-560-2695",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=9cd25f3d-a38e-45a1-bd6c-973a571e886a&cntntsNm=%EA%B3%A0%EC%B0%BD%ED%95%B4%ED%92%8D%EA%B3%A0%EC%B6%94%EC%B6%95%EC%A0%9C"
-  },
-  {
-    "festival_name": "금능원담축제",
-    "period": "2025-08-23~2025-08-24",
-    "start": "2025-08-23",
-    "end": "2025-08-24",
-    "region": "제주특별자치도 제주시",
-    "detailed_location": "제주특별자치도 제주시 한림읍 협재리 2696-1 금능해수욕장특설무대",
-    "contact": "064-796-2011",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=bf914d43-a473-49cb-b615-36f837b0a6aa&cntntsNm=%EA%B8%88%EB%8A%A5%EC%9B%90%EB%8B%B4%EC%B6%95%EC%A0%9C"
+    "festival_name": "비어페스트 광주",
+    "period": "2025-08-28~2025-08-31",
+    "start": "2025-08-28",
+    "end": "2025-08-31",
+    "region": "광주 서구",
+    "detailed_location": "광주광역시 서구 상무누리로 30 (치평동) 김대중컨벤션센터 야외광장",
+    "contact": "062-611-2162",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=91a8835a-2a5b-4033-99af-c4551ba2493a&cntntsNm=%EB%B9%84%EC%96%B4%ED%8E%98%EC%8A%A4%ED%8A%B8%EA%B4%91%EC%A3%BC"
   },
   {
     "festival_name": "장항 맥문동 꽃 축제 ",
@@ -180,6 +130,16 @@
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=aa65052c-a06d-4b98-ba9e-4b30c8150bf6&cntntsNm=%EA%B5%AD%ED%86%A0%EC%A0%95%EC%A4%91%EC%95%99%EC%B2%AD%EC%B6%98%EC%96%91%EA%B5%AC%EB%B0%B0%EA%BC%BD%EC%B6%95%EC%A0%9C"
   },
   {
+    "festival_name": "고창농악 꽃대림축제",
+    "period": "2025-08-29~2025-08-31",
+    "start": "2025-08-29",
+    "end": "2025-08-31",
+    "region": "전북특별자치도 고창군",
+    "detailed_location": "전북특별자치도 고창군 성송면 향산1길 106 ",
+    "contact": "063-562-2044",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=d7086037-fd13-4f9c-93fc-75dd5deb5317&cntntsNm=%EA%B3%A0%EC%B0%BD%EB%86%8D%EC%95%85%EA%BD%83%EB%8C%80%EB%A6%BC%EC%B6%95%EC%A0%9C"
+  },
+  {
     "festival_name": "노원수제맥주축제",
     "period": "2025-08-29~2025-08-31",
     "start": "2025-08-29",
@@ -188,6 +148,26 @@
     "detailed_location": "서울특별시 노원구 화랑로 608 (공릉동) 화랑대 철도공원",
     "contact": "02-2289-3478, 3447",
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=fb888fe0-59af-4634-9eaf-17f4a22a8d6d&cntntsNm=%EB%85%B8%EC%9B%90%EC%88%98%EC%A0%9C%EB%A7%A5%EC%A3%BC%EC%B6%95%EC%A0%9C"
+  },
+  {
+    "festival_name": "소사복숭아축제",
+    "period": "2025-08-29~2025-08-30",
+    "start": "2025-08-29",
+    "end": "2025-08-30",
+    "region": "경기도 부천시",
+    "detailed_location": "경기도 부천시 소사구 성주로23번길 22 (송내동) ",
+    "contact": "032-651-1576",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=1543976c-49f8-40eb-8a6e-0fa0b894ce10&cntntsNm=%EC%86%8C%EC%82%AC%EB%B3%B5%EC%88%AD%EC%95%84%EC%B6%95%EC%A0%9C"
+  },
+  {
+    "festival_name": "동대문구 맥주축제",
+    "period": "2025-08-29~2025-08-30",
+    "start": "2025-08-29",
+    "end": "2025-08-30",
+    "region": "서울 동대문구",
+    "detailed_location": "서울특별시 동대문구 장안동 24-1 장안1수변공원",
+    "contact": "02-3295-5568",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=190d3058-f265-4025-a720-94b58de5eadb&cntntsNm=%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%EB%A7%A5%EC%A3%BC%EC%B6%95%EC%A0%9C"
   },
   {
     "festival_name": "대구 국가유산 야행",
@@ -238,5 +218,15 @@
     "detailed_location": "서울특별시 관악구 관천로 53 (신림동) 신림역 별빛내린천, S1472 관천로문화플랫폼",
     "contact": "02-828-5764",
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=f706f043-fc2f-4fca-9e9a-bcd588eaafb4&cntntsNm=%EA%B7%B8%EB%A3%A8%EB%B8%8C%EC%9D%B8%EA%B4%80%EC%95%85"
+  },
+  {
+    "festival_name": "예술힐링놀이터",
+    "period": "2025-08-30~2025-08-30",
+    "start": "2025-08-30",
+    "end": "2025-08-30",
+    "region": "서울 양천구",
+    "detailed_location": "서울특별시 양천구 남부순환로64길 2 (신월동) 서울문화예술교육센터 양천",
+    "contact": "02-2697-0014",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=5720706a-565b-4fe9-a988-592e664e8ef2&cntntsNm=%EC%98%88%EC%88%A0%ED%9E%90%EB%A7%81%EB%86%80%EC%9D%B4%ED%84%B0"
   }
 ]
