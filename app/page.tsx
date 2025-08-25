@@ -7,6 +7,106 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import { X, MapPin, Clock, Phone, Link, User, Lock, LogOut } from 'lucide-react';
 
+// 전역 스타일을 위한 스타일 태그 추가
+const GlobalStyles = () => (
+  <style jsx global>{`
+    /* 방안 1: 텍스트 줄바꿈 방지 */
+    .festival-box {
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      display: block !important;
+      min-width: 60px !important;
+    }
+    
+    /* 방안 2: Flexbox로 가로 정렬 고정 */
+    .fc-daygrid-day-frame {
+      display: flex !important;
+      flex-direction: column !important;
+      min-height: 120px !important;
+    }
+    
+    .festival-container {
+      display: flex !important;
+      flex-direction: column !important;
+      flex-wrap: nowrap !important;
+      width: 100% !important;
+      gap: 4px !important;
+    }
+    
+    /* 방안 3: 셀 크기 - 스크롤 없이 화면에 맞춤 */
+    .fc-daygrid-day {
+      min-height: 90px !important;
+      /* min-width 제거하여 화면 너비에 맞게 자동 조절 */
+    }
+    
+    /* 작은 화면에서도 레이아웃 유지 */
+    @media (max-width: 768px) {
+      .festival-box {
+        font-size: 10px !important;
+        padding: 4px 2px !important;
+        min-width: 50px !important;
+      }
+    }
+    
+    /* 날짜 번호 스타일 */
+    .fc-daygrid-day-number {
+      position: absolute !important;
+      top: 1px !important;
+      bottom: auto !important;
+      left: 4px !important;
+      right: 4px !important;
+      font-weight: 500;
+      color: #374151;
+    }
+    
+    /* 버튼 호버 효과 개선 */
+    .detail-btn {
+      transition: all 0.2s ease;
+    }
+    
+    .detail-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* 스크롤바 제거 - 전체 내용이 보이도록 */
+    .fc-scroller {
+      overflow: visible !important;
+    }
+    
+    .fc-scroller-harness {
+      overflow: visible !important;
+    }
+    
+    /* 캘린더 전체 높이 고정 */
+    .fc-view-harness {
+      min-height: 600px !important;
+    }
+    
+    /* 캘린더 전체 너비 - 스크롤 없이 전체 표시 */
+    .fc {
+      min-width: 100% !important;
+      width: 100% !important;
+    }
+    
+    /* 캘린더 테이블이 전체 너비 사용 */
+    .fc-daygrid {
+      width: 100% !important;
+    }
+    
+    .fc-daygrid-body {
+      width: 100% !important;
+    }
+    
+    /* 테이블 레이아웃 고정 - 셀 너비 균등 분배 */
+    .fc-scrollgrid-sync-table {
+      width: 100% !important;
+      table-layout: fixed !important;
+    }
+  `}</style>
+);
+
 // Festival 타입 정의
 interface Festival {
   festival_name: string;
@@ -29,16 +129,16 @@ function LoginForm({ onLogin }: { onLogin: (username: string) => void }) {
     setError('');
     setIsLoading(true);
 
-    // 여기서 실제 인증 로직을 구현합니다
-    // 예시: 간단한 하드코딩된 인증 (실제로는 API 호출)
     setTimeout(() => {
       if (username === 'test_2025' && password === '1234') {
         onLogin(username);
-      } else if (username === 'poi_2025' && password === '1234') {
+      } else if (username === 'poi_2025' && password === '4321') {
         onLogin(username);
       } else if (username === 'dynamic_2025' && password === '1234') {
         onLogin(username);
-      } else if (username === 'gis_2025' && password === '1234') {
+      } else if (username === 'gis_2025' && password === '4321') {
+        onLogin(username);
+      } else if (username === 'park_2025' && password === '4321') {
         onLogin(username);
       } else {
         setError('아이디 또는 비밀번호가 올바르지 않습니다.');
@@ -244,15 +344,15 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
     const festivalCount = festivalsForDate ? festivalsForDate.length : 0;
     
     return (
-      <div className="h-full flex flex-col relative" style={{ minHeight: '100px' }}>
-        <div className="absolute top-1 left-0 font-medium text-gray-800 text-sm">
+      <div className="h-full flex flex-col relative" style={{ minHeight: '90px' }}>
+        <div className="fc-daygrid-day-number">
           {info.dayNumberText}
         </div>
         
-        <div className="flex-1 flex flex-col px-8 py-8 pt-12 pb-0 -mb-8">
+        <div className="flex-1 flex items-end p-1 pb-1">
           {festivalCount > 0 && (
-            <div className="space-y-1 mt-auto">
-              <div className="bg-blue-500 text-white text-xs text-center py-2 px-2 rounded border border-black font-medium">
+            <div className="festival-container w-full">
+              <div className="festival-box bg-blue-500 text-white text-xs text-center py-1 px-1 rounded border border-black font-medium mt-9">
                 진행중 {festivalCount}건
               </div>
               
@@ -265,7 +365,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
                   });
                   setShowModal(true);
                 }}
-                className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs text-center py-2 px-2 rounded border border-black transition-colors font-medium"
+                className="festival-box detail-btn w-full bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs text-center py-1 px-1 rounded border border-black transition-colors font-medium"
               >
                 상세정보
               </button>
@@ -291,139 +391,144 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
   }
 
   return (
-    <div style={{ 
-      transform: 'scale(1.0)', 
-      transformOrigin: 'center',
-      width: '100%',
-      height: '100%'
-    }}>
-      <div className="p-4 max-w-6xl mx-auto">
-        {/* 헤더에 로그아웃 버튼 추가 */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center">
-            <img 
-              src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo.png" 
-              alt="iNavi Logo" 
-              className="mr-2 w-30 h-30 object-contain"
-              onError={(e) => {
-                console.error('이미지 로드 실패:', e);
-                (e.target as HTMLImageElement).style.display = 'none';
-              }}
-            />
-            <h1 className="text-3xl font-bold text-gray-800">공간플랫폼개발그룹 축제달력</h1>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-600">
-              <User className="inline w-4 h-4 mr-1" />
-              {currentUser}님
-            </span>
-            <button
-              onClick={onLogout}
-              className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition text-sm font-medium text-gray-700"
-            >
-              <LogOut className="w-4 h-4" />
-              로그아웃
-            </button>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <FullCalendar
-            plugins={[dayGridPlugin, interactionPlugin]}
-            initialView="dayGridMonth"
-            editable={false}
-            selectable={true}
-            events={events}
-            dayCellContent={renderDayCellContent}
-            dateClick={handleDateClick}
-            datesSet={handleDatesSet}
-            height={800}
-            headerToolbar={{
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth'
-            }}
-            locale="ko"
-            dayMaxEvents={false}
-            moreLinkText="더보기"
-          />
-        </div>
-
-        {/* 축제 목록 모달 */}
-        {showModal && selectedDate && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-              <div className="flex justify-between items-center p-4 border-b">
-                <h2 className="text-xl font-bold text-gray-800">
-                  {formatDate(selectedDate.date)} 축제 목록
-                </h2>
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  <X size={24} />
-                </button>
-              </div>
-              
-              <div className="p-4 space-y-4">
-                {selectedDate.festivals.map((festival: Festival, index: number) => (
-                  <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                    <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                      {festival.festival_name}
-                    </h3>
-                    
-                    <div className="space-y-2 text-sm text-gray-600">
-                      {festival.period && (
-                        <div className="flex items-center">
-                          <Clock size={16} className="mr-2 text-gray-500" />
-                          <span>{festival.period}</span>
-                        </div>
-                      )}
-
-                      {festival.region && (
-                        <div className="flex items-center">
-                          <MapPin size={16} className="mr-2 text-gray-500" />
-                          <span>{festival.region}</span>
-                        </div>
-                      )}
-                      
-                      {festival.detailed_location && (
-                        <div className="flex items-start">
-                          <MapPin size={16} className="mr-2 text-gray-500 mt-0.5" />
-                          <span>{festival.detailed_location}</span>
-                        </div>
-                      )}
-                      
-                      {festival.contact && (
-                        <div className="flex items-center">
-                          <Phone size={16} className="mr-2 text-gray-500" />
-                          <span>{festival.contact}</span>
-                        </div>				
-                      )}
-          
-                      {festival.URL && (
-                        <div className="flex items-center">
-                          <Link size={16} className="mr-2 text-gray-500" />
-                          <a
-                            href={festival.URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 underline"
-                          >
-                            페이지로 이동
-                          </a>
-                        </div>	
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
+    <>
+      <GlobalStyles />
+      <div style={{ 
+        transform: 'scale(1.0)', 
+        transformOrigin: 'center',
+        width: '100%',
+        height: '100%'
+      }}>
+        <div className="p-4 max-w-full mx-auto">
+          {/* 헤더에 로그아웃 버튼 추가 */}
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center">
+              <img 
+                src="https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/image/inavi_logo.png" 
+                alt="iNavi Logo" 
+                className="mr-2 w-30 h-30 object-contain"
+                onError={(e) => {
+                  console.error('이미지 로드 실패:', e);
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
+              />
+              <h1 className="text-3xl font-bold text-gray-800">공간플랫폼개발그룹 축제달력</h1>
+            </div>
+            
+            <div className="flex items-center gap-4">
+              <span className="text-sm text-gray-600">
+                <User className="inline w-4 h-4 mr-1" />
+                {currentUser}님
+              </span>
+              <button
+                onClick={onLogout}
+                className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition text-sm font-medium text-gray-700"
+              >
+                <LogOut className="w-4 h-4" />
+                로그아웃
+              </button>
             </div>
           </div>
-        )}
+
+          <div className="bg-white rounded-lg shadow-lg overflow-visible">
+            <FullCalendar
+              plugins={[dayGridPlugin, interactionPlugin]}
+              initialView="dayGridMonth"
+              editable={false}
+              selectable={true}
+              events={events}
+              dayCellContent={renderDayCellContent}
+              dateClick={handleDateClick}
+              datesSet={handleDatesSet}
+              aspectRatio={1.6}
+              contentHeight="auto"
+              height={800}
+              headerToolbar={{
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth'
+              }}
+              locale="ko"
+              dayMaxEvents={false}
+              moreLinkText="더보기"
+            />
+          </div>
+
+          {/* 축제 목록 모달 */}
+          {showModal && selectedDate && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+              <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+                <div className="flex justify-between items-center p-4 border-b">
+                  <h2 className="text-xl font-bold text-gray-800">
+                    {formatDate(selectedDate.date)} 축제 목록
+                  </h2>
+                  <button
+                    onClick={() => setShowModal(false)}
+                    className="text-gray-500 hover:text-gray-700"
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
+                
+                <div className="p-4 space-y-4">
+                  {selectedDate.festivals.map((festival: Festival, index: number) => (
+                    <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                      <h3 className="font-semibold text-lg text-gray-800 mb-2">
+                        {festival.festival_name}
+                      </h3>
+                      
+                      <div className="space-y-2 text-sm text-gray-600">
+                        {festival.period && (
+                          <div className="flex items-center">
+                            <Clock size={16} className="mr-2 text-gray-500" />
+                            <span>{festival.period}</span>
+                          </div>
+                        )}
+
+                        {festival.region && (
+                          <div className="flex items-center">
+                            <MapPin size={16} className="mr-2 text-gray-500" />
+                            <span>{festival.region}</span>
+                          </div>
+                        )}
+                        
+                        {festival.detailed_location && (
+                          <div className="flex items-start">
+                            <MapPin size={16} className="mr-2 text-gray-500 mt-0.5" />
+                            <span>{festival.detailed_location}</span>
+                          </div>
+                        )}
+                        
+                        {festival.contact && (
+                          <div className="flex items-center">
+                            <Phone size={16} className="mr-2 text-gray-500" />
+                            <span>{festival.contact}</span>
+                          </div>				
+                        )}
+            
+                        {festival.URL && (
+                          <div className="flex items-center">
+                            <Link size={16} className="mr-2 text-gray-500" />
+                            <a
+                              href={festival.URL}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-600 underline"
+                            >
+                              페이지로 이동
+                            </a>
+                          </div>	
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -432,7 +537,6 @@ export default function FestivalCalendar() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentUser, setCurrentUser] = useState<string>('');
 
-  // 컴포넌트 마운트 시 로컬스토리지에서 인증 상태 확인
   useEffect(() => {
     const savedUser = sessionStorage.getItem('currentUser');
     if (savedUser) {
@@ -444,7 +548,6 @@ export default function FestivalCalendar() {
   const handleLogin = (username: string) => {
     setCurrentUser(username);
     setIsAuthenticated(true);
-    // 세션스토리지에 저장 (브라우저 탭 닫으면 자동 로그아웃)
     sessionStorage.setItem('currentUser', username);
   };
 
@@ -454,11 +557,9 @@ export default function FestivalCalendar() {
     sessionStorage.removeItem('currentUser');
   };
 
-  // 인증되지 않은 경우 로그인 폼 표시
   if (!isAuthenticated) {
     return <LoginForm onLogin={handleLogin} />;
   }
 
-  // 인증된 경우 캘린더 표시
   return <FestivalCalendarContent currentUser={currentUser} onLogout={handleLogout} />;
 }
