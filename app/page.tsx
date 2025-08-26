@@ -111,6 +111,8 @@ const GlobalStyles = () => (
 interface Festival {
   festival_name: string;
   period?: string;
+  start?: string;
+  end?: string;
   region?: string;
   detailed_location?: string;
   contact?: string;
@@ -221,27 +223,62 @@ function LoginForm({ onLogin }: { onLogin: (username: string) => void }) {
   );
 }
 
-// period 문자열을 파싱하여 날짜 배열로 변환
-const parsePeriodToDates = (period: string): Date[] => {
-  const dates: Date[] = [];
+// 날짜 문자열을 로컬 날짜 형식으로 변환
+const formatLocalDate = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+// period 문자열을 파싱하여 날짜 배열로 변환 (개선된 버전)
+const parsePeriodToDates = (period: string, startDate?: string, endDate?: string): string[] => {
+  const dates: string[] = [];
   
-  if (period.includes('~')) {
-    const [startStr, endStr] = period.split('~').map((s: string) => s.trim());
-    const startDate = new Date(startStr);
-    const endDate = new Date(endStr);
+  try {
+    let start: Date | null = null;
+    let end: Date | null = null;
     
-    if (!isNaN(startDate.getTime()) && !isNaN(endDate.getTime())) {
-      const currentDate = new Date(startDate);
-      while (currentDate <= endDate) {
-        dates.push(new Date(currentDate));
-        currentDate.setDate(currentDate.getDate() + 1);
+    // start와 end 필드가 제공된 경우 우선 사용
+    if (startDate && endDate) {
+      start = new Date(startDate + 'T00:00:00');
+      end = new Date(endDate + 'T00:00:00');
+    } 
+    // period 필드 파싱
+    else if (period) {
+      if (period.includes('~')) {
+        const [startStr, endStr] = period.split('~').map(s => s.trim());
+        
+        // 날짜 형식 정규화
+        const normalizeDate = (dateStr: string): string => {
+          // "2025.08.29" -> "2025-08-29"
+          return dateStr.replace(/\./g, '-').split(' ')[0];
+        };
+        
+        const normalizedStart = normalizeDate(startStr);
+        const normalizedEnd = normalizeDate(endStr);
+        
+        start = new Date(normalizedStart + 'T00:00:00');
+        end = new Date(normalizedEnd + 'T00:00:00');
+      } else {
+        // 단일 날짜 처리
+        const normalized = period.replace(/\./g, '-').split(' ')[0];
+        start = new Date(normalized + 'T00:00:00');
+        end = start;
       }
     }
-  } else if (period.includes('-')) {
-    const date = new Date(period);
-    if (!isNaN(date.getTime())) {
-      dates.push(date);
+    
+    // 유효한 날짜인지 확인하고 날짜 배열 생성
+    if (start && end && !isNaN(start.getTime()) && !isNaN(end.getTime())) {
+      const current = new Date(start);
+      
+      while (current <= end) {
+        dates.push(formatLocalDate(current));
+        current.setDate(current.getDate() + 1);
+      }
     }
+  } catch (error) {
+    console.error('날짜 파싱 오류:', period, error);
   }
   
   return dates;
@@ -258,34 +295,105 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
 
   const loadFestivalData = useCallback(async () => {
     try {
-      const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival.json';
-      const response = await fetch(url);
-      const data: Festival[] = await response.json();
+      // 임시 하드코딩된 데이터 (테스트용)
+      const testData: Festival[] = [
+        {
+          "festival_name": "제민천 밤페스타",
+          "period": "2025-07-05~2025-12-06",
+          "start": "2025-07-05",
+          "end": "2025-12-06",
+          "region": "충청남도 공주시",
+          "detailed_location": "충청남도 공주시 우체국길 15 (반죽동) 제민천 일대",
+          "contact": "041-852-8066",
+          "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=b03bf1da-0c4c-4640-8f8a-cfcf8e0d76f2&cntntsNm=%EC%A0%9C%EB%AF%BC%EC%B2%9C%EB%B0%A4%ED%8E%98%EC%8A%A4%ED%83%80"
+        },
+        {
+          "festival_name": "가평 양떼목장 수국축제",
+          "period": "2025-06-27~2025-10-31",
+          "start": "2025-06-27",
+          "end": "2025-10-31",
+          "region": "경기도 가평군",
+          "detailed_location": "경기도 가평군 설악면 유명로 1209",
+          "contact": "031-585-1155",
+          "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=a69de91d-67d2-4b13-b7c2-23eb27115df0&cntntsNm=%EA%B0%80%ED%8F%89%EC%96%91%EB%96%BC%EB%AA%A9%EC%9E%A5%EC%88%98%EA%B5%AD%EC%B6%95%EC%A0%9C"
+        }
+      ];
+      
+      // 원본 URL에서 데이터 가져오기 시도
+      let data: Festival[] = testData;
+      
+      try {
+        const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival.json'; // festival2.json 대신 festival.json 시도
+        const response = await fetch(url);
+        
+        if (response.ok) {
+          const text = await response.text();
+          data = JSON.parse(text);
+          console.log('GitHub에서 데이터 로드 성공');
+        } else {
+          console.warn('GitHub 데이터 로드 실패, 테스트 데이터 사용');
+        }
+      } catch (fetchError) {
+        console.warn('외부 데이터 로드 실패, 테스트 데이터 사용:', fetchError);
+      }
       
       const festivalsByDateMap: {[key: string]: Festival[]} = {};
+      let processedCount = 0;
+      let skippedCount = 0;
+      
+      // 디버깅: 특정 날짜 체크
+      const aug29Festivals: string[] = [];
       
       data.forEach((festival: Festival) => {
-        if (festival.period) {
-          const dateRange = parsePeriodToDates(festival.period);
-          
-          dateRange.forEach((date: Date) => {
-            const dateStr = date.toISOString().split('T')[0];
-            
-            if (!festivalsByDateMap[dateStr]) {
-              festivalsByDateMap[dateStr] = [];
-            }
-            
-            festivalsByDateMap[dateStr].push(festival);
-          });
+        // start와 end 필드 또는 period 필드 사용
+        const dateRange = parsePeriodToDates(
+          festival.period || '', 
+          festival.start, 
+          festival.end
+        );
+        
+        if (dateRange.length === 0) {
+          console.warn('날짜 파싱 실패:', festival.festival_name, festival.period);
+          skippedCount++;
+          return;
         }
+        
+        dateRange.forEach((dateStr: string) => {
+          if (!festivalsByDateMap[dateStr]) {
+            festivalsByDateMap[dateStr] = [];
+          }
+          
+          festivalsByDateMap[dateStr].push(festival);
+          processedCount++;
+          
+          // 8월 29일 축제 수집
+          if (dateStr === '2025-08-29') {
+            aug29Festivals.push(festival.festival_name);
+          }
+        });
       });
+      
+      // 디버깅 정보 출력
+      console.log('=== 축제 데이터 로드 완료 ===');
+      console.log('총 축제 수:', data.length);
+      console.log('처리된 항목:', processedCount);
+      console.log('스킵된 항목:', skippedCount);
+      console.log('2025-08-29 축제 수:', aug29Festivals.length);
+      console.log('2025-08-29 축제 목록:', aug29Festivals);
       
       setFestivalsByDate(festivalsByDateMap);
       setEvents([]);
       setLoading(false);
     } catch (error) {
       console.error('축제 데이터 로드 실패:', error);
+      
+      // 오류 발생시 빈 데이터로 초기화
+      setFestivalsByDate({});
+      setEvents([]);
       setLoading(false);
+      
+      // 사용자에게 알림
+      alert('축제 데이터를 불러오는데 실패했습니다. 잠시 후 다시 시도해주세요.');
     }
   }, []);
 
@@ -307,7 +415,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
   };
 
   const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr);
+    const date = new Date(dateStr + 'T00:00:00');
     return date.toLocaleDateString('ko-KR', {
       year: 'numeric',
       month: 'long',
@@ -325,8 +433,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     
     for (let day = 1; day <= daysInMonth; day++) {
-      const date = new Date(year, month, day);
-      const dateStr = date.toISOString().split('T')[0];
+      const dateStr = formatLocalDate(new Date(year, month, day));
       const festivalsForDate = festivalsByDate[dateStr];
       
       if (festivalsForDate && festivalsForDate.length > 0) {
@@ -339,9 +446,15 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
   };
 
   const renderDayCellContent = (info: { date: Date; dayNumberText: string }) => {
-    const dateStr = info.date.toISOString().split('T')[0];
+    // FullCalendar의 date 객체를 로컬 날짜 문자열로 변환
+    const dateStr = formatLocalDate(info.date);
     const festivalsForDate = festivalsByDate[dateStr];
     const festivalCount = festivalsForDate ? festivalsForDate.length : 0;
+    
+    // 디버깅: 특정 날짜 체크
+    if (dateStr === '2025-08-29' && festivalCount > 0) {
+      console.log(`렌더링 - ${dateStr}: ${festivalCount}개 축제`);
+    }
     
     return (
       <div className="h-full flex flex-col relative" style={{ minHeight: '90px' }}>
@@ -460,7 +573,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
               <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
                 <div className="flex justify-between items-center p-4 border-b">
                   <h2 className="text-xl font-bold text-gray-800">
-                    {formatDate(selectedDate.date)} 축제 목록
+                    {formatDate(selectedDate.date)} 축제 목록 ({selectedDate.festivals.length}개)
                   </h2>
                   <button
                     onClick={() => setShowModal(false)}
