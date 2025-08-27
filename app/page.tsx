@@ -104,6 +104,22 @@ const GlobalStyles = () => (
       width: 100% !important;
       table-layout: fixed !important;
     }
+
+    .fc-daygrid {
+      border-collapse: collapse !important;
+    }
+
+    /* 첫 번째 날짜 행 위쪽 선 제거 */
+    .fc-daygrid tbody tr:first-child td {
+      border-top: none !important;
+    }
+
+    /* 모든 셀과 헤더 테두리 */
+    .fc-daygrid td,
+    .fc-daygrid th {
+      border: 1px solid #222222ff !important;
+    }
+
   `}</style>
 );
 
