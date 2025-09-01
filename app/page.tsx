@@ -340,7 +340,9 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
       
       try {
         const url = 'https://raw.githubusercontent.com/KIMSANGWOO518/inavi-calendar/main/json/festival.json'; // festival2.json 대신 festival.json 시도
-        const response = await fetch(url);
+        const response = await fetch(url, {
+          cache: "no-store",
+        });
         
         if (response.ok) {
           const text = await response.text();
