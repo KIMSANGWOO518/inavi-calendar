@@ -158,6 +158,8 @@ function LoginForm({ onLogin }: { onLogin: (username: string) => void }) {
         onLogin(username);
       } else if (username === 'park_2025' && password === '4321') {
         onLogin(username);
+      } else if (username === 'recruit_2025' && password === '4321') {
+        onLogin(username);                    
       } else {
         setError('아이디 또는 비밀번호가 올바르지 않습니다.');
       }
