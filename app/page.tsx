@@ -5,7 +5,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { X, MapPin, Clock, Phone, Link, User, Lock, LogOut } from 'lucide-react';
+import { X, MapPin, Clock, Phone, Link, User, Lock, LogOut, Tag } from 'lucide-react';
 
 // 전역 스타일을 위한 스타일 태그 추가
 const GlobalStyles = () => (
@@ -123,7 +123,7 @@ const GlobalStyles = () => (
   `}</style>
 );
 
-// Festival 타입 정의
+// Festival 타입 정의 - category 필드 추가
 interface Festival {
   festival_name: string;
   period?: string;
@@ -132,6 +132,7 @@ interface Festival {
   region?: string;
   detailed_location?: string;
   contact?: string;
+  category?: string;  // category 필드 추가
   URL?: string;
 }
 
@@ -313,7 +314,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
 
   const loadFestivalData = useCallback(async () => {
     try {
-      // 임시 하드코딩된 데이터 (테스트용)
+      // 임시 하드코딩된 데이터 (테스트용) - category 필드 추가
       const testData: Festival[] = [
         {
           "festival_name": "제민천 밤페스타",
@@ -323,6 +324,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
           "region": "충청남도 공주시",
           "detailed_location": "충청남도 공주시 우체국길 15 (반죽동) 제민천 일대",
           "contact": "041-852-8066",
+          "category": "문화축제",
           "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=b03bf1da-0c4c-4640-8f8a-cfcf8e0d76f2&cntntsNm=%EC%A0%9C%EB%AF%BC%EC%B2%9C%EB%B0%A4%ED%8E%98%EC%8A%A4%ED%83%80"
         },
         {
@@ -333,6 +335,7 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
           "region": "경기도 가평군",
           "detailed_location": "경기도 가평군 설악면 유명로 1209",
           "contact": "031-585-1155",
+          "category": "자연축제",
           "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=a69de91d-67d2-4b13-b7c2-23eb27115df0&cntntsNm=%EA%B0%80%ED%8F%89%EC%96%91%EB%96%BC%EB%AA%A9%EC%9E%A5%EC%88%98%EA%B5%AD%EC%B6%95%EC%A0%9C"
         }
       ];
@@ -637,6 +640,13 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
                             <Phone size={16} className="mr-2 text-gray-500" />
                             <span>{festival.contact}</span>
                           </div>				
+                        )}
+
+                        {festival.category && (
+                          <div className="flex items-center">
+                            <Tag size={16} className="mr-2 text-gray-500" />
+                            <span>{festival.category}</span>
+                          </div>
                         )}
             
                         {festival.URL && (
