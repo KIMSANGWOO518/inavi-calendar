@@ -622,13 +622,6 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
                           </div>
                         )}
 
-                        {festival.category && (
-                          <div className="flex items-center">
-                            <Tag size={16} className="mr-2 text-gray-500" />
-                            <span>{festival.category}</span>
-                          </div>
-                        )}
-
                         {festival.region && (
                           <div className="flex items-center">
                             <MapPin size={16} className="mr-2 text-gray-500" />
@@ -663,6 +656,15 @@ function FestivalCalendarContent({ currentUser, onLogout }: { currentUser: strin
                             </a>
                           </div>	
                         )}
+
+                        {festival.category && (
+                          <div className="flex items-center">
+                            <Tag size={16} className="mr-2 text-gray-500" />
+                            <span>{festival.category}</span>
+                          </div>
+                        )}
+
+
                       </div>
                     </div>
                   ))}
