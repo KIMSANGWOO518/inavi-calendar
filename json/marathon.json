@@ -1,17 +1,5 @@
 [
   {
-    "festival_name": "제22회 강남국제평화 마라톤",
-    "period": "2025-10-03~2025-10-03",
-    "start": "2025-10-03",
-    "end": "2025-10-03",
-    "contact": "02-7727-1755",
-    "region": "서울",
-    "detailed_location": "삼성1동 주민센터",
-    "URL": "http://peacemarathon.co.kr/",
-    "description": "강남구 국제평화마라톤",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제2회 울트라서울",
     "period": "2025-10-03~2025-10-03",
     "start": "2025-10-03",
@@ -21,6 +9,18 @@
     "detailed_location": "시청 덕수궁돌담길",
     "URL": "http://surally2406.webmaker21.kr/competition/outline?ca_id=02&wm_id=15",
     "description": "발전하는 대회를 만들어 갑니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제22회 강남국제평화 마라톤",
+    "period": "2025-10-03~2025-10-03",
+    "start": "2025-10-03",
+    "end": "2025-10-03",
+    "contact": "02-7727-1755",
+    "region": "서울",
+    "detailed_location": "삼성1동 주민센터",
+    "URL": "http://peacemarathon.co.kr/",
+    "description": "강남구 국제평화마라톤",
     "category": "마라톤온라인"
   },
   {
@@ -60,18 +60,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 애니멀런 서울",
-    "period": "2025-10-09~2025-10-09",
-    "start": "2025-10-09",
-    "end": "2025-10-09",
-    "contact": "010-5725-6820",
-    "region": "서울",
-    "detailed_location": "상암동 평화의 광장",
-    "URL": "http://www.animallace.com/shop_view/?idx=25",
-    "description": "애니멀런",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 수원교구 생명사랑 마라톤",
     "period": "2025-10-09~2025-10-09",
     "start": "2025-10-09",
@@ -84,6 +72,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "2025 애니멀런 서울",
+    "period": "2025-10-09~2025-10-09",
+    "start": "2025-10-09",
+    "end": "2025-10-09",
+    "contact": "010-5725-6820",
+    "region": "서울",
+    "detailed_location": "상암동 평화의 광장",
+    "URL": "http://www.animallace.com/shop_view/?idx=25",
+    "description": "애니멀런",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "2025 한글런",
     "period": "2025-10-09~2025-10-09",
     "start": "2025-10-09",
@@ -93,6 +93,18 @@
     "detailed_location": "세종시 중앙공원 도시축제마당",
     "URL": "http://hangeulrun.com",
     "description": ".",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 대전 DTrail 레이스",
+    "period": "2025-10-11~2025-10-11",
+    "start": "2025-10-11",
+    "end": "2025-10-11",
+    "contact": "042-544-3809",
+    "region": "대전",
+    "detailed_location": "대전한화생명볼파크",
+    "URL": "http://dtrail.co.kr",
+    "description": "Dtrail은 대한민국 국가숲길 가운데 유일하게 도심을 둘러 싼 대전둘레산길 구간과 보문산을 중심으로 대전의 자연환경과 도심을 조망할 수 있는 중부권 최대의 트레일러닝 대회입니다.",
     "category": "마라톤온라인"
   },
   {
@@ -216,18 +228,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 대전 DTrail 레이스",
-    "period": "2025-10-11~2025-10-11",
-    "start": "2025-10-11",
-    "end": "2025-10-11",
-    "contact": "042-544-3809",
-    "region": "대전",
-    "detailed_location": "대전한화생명볼파크",
-    "URL": "http://dtrail.co.kr",
-    "description": "Dtrail은 대한민국 국가숲길 가운데 유일하게 도심을 둘러 싼 대전둘레산길 구간과 보문산을 중심으로 대전의 자연환경과 도심을 조망할 수 있는 중부권 최대의 트레일러닝 대회입니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 핑크런",
     "period": "2025-10-12~2025-10-12",
     "start": "2025-10-12",
@@ -264,18 +264,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 서울 달리기(Seoul Race)",
-    "period": "2025-10-12~2025-10-12",
-    "start": "2025-10-12",
-    "end": "2025-10-12",
-    "contact": "02-312-1998",
-    "region": "서울",
-    "detailed_location": "청계광장앞",
-    "URL": "http://www.seoul-race.co.kr/",
-    "description": "서울 도심을 달리는 대회",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제8회 거제시장배 섬꽃 전국 마라톤",
     "period": "2025-10-12~2025-10-12",
     "start": "2025-10-12",
@@ -285,6 +273,18 @@
     "detailed_location": "거제스포츠파크",
     "URL": "http://www.geojerun.com/",
     "description": "제8회 거제시장배 섬꽃 전국 마라톤대회\n\n● 일시 2025년 10월 12일(일) 오전 9시 출발 (집결 : 오전 8시)\n● 장소 거제스포츠파크\n● 주최 거제시, 거제시체육회\n● 주관 거제시육상연맹, 전국마라톤협회\n● 후원 MBN, 거제경찰서, 거제소방서, 거제보건소\n● 협력 월드런, 삼익전자(주), 전사모\n\n많은 관심과 참여 바랍니다!",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 서울 달리기(Seoul Race)",
+    "period": "2025-10-12~2025-10-12",
+    "start": "2025-10-12",
+    "end": "2025-10-12",
+    "contact": "02-312-1998",
+    "region": "서울",
+    "detailed_location": "청계광장앞",
+    "URL": "http://www.seoul-race.co.kr/",
+    "description": "서울 도심을 달리는 대회",
     "category": "마라톤온라인"
   },
   {
@@ -360,18 +360,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제19회 충주 앙성 비내길 마라톤",
-    "period": "2025-10-18~2025-10-18",
-    "start": "2025-10-18",
-    "end": "2025-10-18",
-    "contact": "042-638-1080",
-    "region": "충북",
-    "detailed_location": "충주시 앙성 온천광장",
-    "URL": "http://www.run1080.com/new/mini/index.php?code=1501",
-    "description": "제19회 충주 앙성 비내길 마라톤 대회\n\n▶일 시 : 2025년 10월 18일(토) 오전 9시 출발 (집결 : 오전 8시)\n▶장 소 : 충주앙성온천광장\n▶주 최 : 앙성면체육회\n▶주 관 : 전국마라톤협회\n▶후 원 : 충주시, 앙성면\n▶협 력 : 월드런, 전마협 페이싱팀\n\n선착순 1500명\n\n5km 500명 / 10km 1000명\n\n위 기간보다 조기 마감 될 수 있습니다.\n\n많은 관심과 참여바랍니다. 감사합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제3회 강서허준런(RUN)",
     "period": "2025-10-18~2025-10-18",
     "start": "2025-10-18",
@@ -381,6 +369,18 @@
     "detailed_location": "서울식물원 초지원",
     "URL": "http://강서허준런.com",
     "description": "\"아름다운 강서의 자연을 만끽하는 달리기 축제\"\n강서허준런(RUN)\n\n\"강서허준런(RUN)\"은 강서구에서 태어나고 돌아가신 우리나라를 대표하는 의학자\n의성 허준 선생님의 업적을 기리는 강서구의 대표 축제 \"허준축제\"의 힘찬 시작을 알리는 행사로\n남녀노소 누구나 즐길 수 있는 \"런 페스티벌\"입니다.\n\n녹색도시 강서, 정원도시 서울의 대표 랜드마크인 서울식물원을 달리는 유일한 달리기 축제\n허준런(RUN)에서 우리 함께 달려요~",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제19회 충주 앙성 비내길 마라톤",
+    "period": "2025-10-18~2025-10-18",
+    "start": "2025-10-18",
+    "end": "2025-10-18",
+    "contact": "042-638-1080",
+    "region": "충북",
+    "detailed_location": "충주시 앙성 온천광장",
+    "URL": "http://www.run1080.com/new/mini/index.php?code=1501",
+    "description": "제19회 충주 앙성 비내길 마라톤 대회\n\n▶일 시 : 2025년 10월 18일(토) 오전 9시 출발 (집결 : 오전 8시)\n▶장 소 : 충주앙성온천광장\n▶주 최 : 앙성면체육회\n▶주 관 : 전국마라톤협회\n▶후 원 : 충주시, 앙성면\n▶협 력 : 월드런, 전마협 페이싱팀\n\n선착순 1500명\n\n5km 500명 / 10km 1000명\n\n위 기간보다 조기 마감 될 수 있습니다.\n\n많은 관심과 참여바랍니다. 감사합니다.",
     "category": "마라톤온라인"
   },
   {
@@ -504,6 +504,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제22회 여주 세종대왕 마라톤",
+    "period": "2025-10-19~2025-10-19",
+    "start": "2025-10-19",
+    "end": "2025-10-19",
+    "contact": "042-638-1080",
+    "region": "경기",
+    "detailed_location": "여주시 여주종합운동",
+    "URL": "http://www.yjmarathon.com/",
+    "description": "제22회 여주 세종대왕 마라톤대회\n\n▶ 일 시 : 2025년 10월 19일(일) 출발 오전 8시 30분 (집결 오전 7시 30분)\n▶ 장 소 : 여주종합운동장(여주시 영릉로 123)\n▶ 종 목 : 3.5km(휠체어), 4km, 10km, Half\n▶ 주 최 : 여주시체육회\n▶ 주 관 : 여주시육상연맹, 전국마라톤협회\n▶ 후 원 : 여주시, 여주시의회, 여주교육지원청, 여주경찰서,\n여주시모범운전자회,여주시자율방범연합대, 여주시해병전우회\n▶ 협 력 : 월드런, 전사모 페이싱팀\n\n선착순 4000명 마감됩니다. (위 접수기간보다 조기마감 될 수 있습니다.)\n\n많은 관심과 참여 바랍니다. 감사합니다!",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "제14회 광주평화통일마라톤",
     "period": "2025-10-19~2025-10-19",
     "start": "2025-10-19",
@@ -525,18 +537,6 @@
     "detailed_location": "대청공원",
     "URL": "http://dcmarathon.or.kr",
     "description": "☆★제24회 대청호마라톤대회★☆\n\n‘마음가득 사랑담고 달리자’\n제24회 대청호마라톤대회에 여러분을 초대합니다.\n\n■ 대회일시 : 2025. 10. 19.(일) 오전8시 30분 집결(출발 오전9시)\n\n■ 대회장소 : 대청공원\n\n■ 경기종목 : 하프코스(21.0975㎞), 미니코스(10㎞), 건강코스(5km)\n\n■ 참 가 비 : 하프코스(21.0975㎞) - 35,000원 / 선착순 500명\n미니코스(10㎞) - 35,000원 / 선착순 1,500명\n건강코스(5km) - 20,000원 / 선착순1,000명\n\n■ 신청방법 : www.dcmarathon.or.kr(대청호마라톤 홈페이지)\n\n■ 참가기념품 : 기능성티셔츠\n\n■ 완주기념품 : 완주메달, 기록증\n\n■ 접수기한 : 2025. 4. 28(월) 10:00 ~ 7. 11.(금) 16:00까지\n\n더 자세한 내용은 대청호마라톤홈페이지를 방문해주세요^.^\n\n■문의전화 : 042-934-8890/ 대덕구체육회",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "제22회 여주 세종대왕 마라톤",
-    "period": "2025-10-19~2025-10-19",
-    "start": "2025-10-19",
-    "end": "2025-10-19",
-    "contact": "042-638-1080",
-    "region": "경기",
-    "detailed_location": "여주시 여주종합운동",
-    "URL": "http://www.yjmarathon.com/",
-    "description": "제22회 여주 세종대왕 마라톤대회\n\n▶ 일 시 : 2025년 10월 19일(일) 출발 오전 8시 30분 (집결 오전 7시 30분)\n▶ 장 소 : 여주종합운동장(여주시 영릉로 123)\n▶ 종 목 : 3.5km(휠체어), 4km, 10km, Half\n▶ 주 최 : 여주시체육회\n▶ 주 관 : 여주시육상연맹, 전국마라톤협회\n▶ 후 원 : 여주시, 여주시의회, 여주교육지원청, 여주경찰서,\n여주시모범운전자회,여주시자율방범연합대, 여주시해병전우회\n▶ 협 력 : 월드런, 전사모 페이싱팀\n\n선착순 4000명 마감됩니다. (위 접수기간보다 조기마감 될 수 있습니다.)\n\n많은 관심과 참여 바랍니다. 감사합니다!",
     "category": "마라톤온라인"
   },
   {
@@ -708,18 +708,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 의정부 하천마라톤",
-    "period": "2025-10-25~2025-10-25",
-    "start": "2025-10-25",
-    "end": "2025-10-25",
-    "contact": "031-850-5756",
-    "region": "경기",
-    "detailed_location": "동오초등학교",
-    "URL": "http://ujbsports.or.kr/",
-    "description": "1만원 상품권 제공",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 대구 그란페스타",
     "period": "2025-10-25~2025-10-25",
     "start": "2025-10-25",
@@ -729,6 +717,18 @@
     "detailed_location": "군위종합운동장",
     "URL": "http://granfesta.co.kr",
     "description": "제2회 대구그란페스타 개최!\n\n홈페이지는 8월13일 오픈입니다.\n많은 관심과 참여바랍니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 의정부 하천마라톤",
+    "period": "2025-10-25~2025-10-25",
+    "start": "2025-10-25",
+    "end": "2025-10-25",
+    "contact": "031-850-5756",
+    "region": "경기",
+    "detailed_location": "동오초등학교",
+    "URL": "http://ujbsports.or.kr/",
+    "description": "1만원 상품권 제공",
     "category": "마라톤온라인"
   },
   {
@@ -864,18 +864,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 KAC GIVE RUNWAY",
-    "period": "2025-10-30~2025-10-30",
-    "start": "2025-10-30",
-    "end": "2025-10-30",
-    "contact": "02-6416-1756",
-    "region": "제주",
-    "detailed_location": "제주 용두암 공영주차장",
-    "URL": "http://naver.me/GLzlgC4V",
-    "description": "제주공항 활주로와 푸른 제주 바다를 함께 즐기는 특별한 경험!",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 부천마라톤",
     "period": "2025-10-26~2025-10-26",
     "start": "2025-10-26",
@@ -885,6 +873,18 @@
     "detailed_location": "부천중앙공원",
     "URL": "http://www.bskrun.co.kr",
     "description": "부천의 심장을 달린다, 부천 도심을 달리는 도심환상의 코스\n부천마라톤대회!! 많은 관심과 참여 부탁드립니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 KAC GIVE RUNWAY",
+    "period": "2025-10-30~2025-10-30",
+    "start": "2025-10-30",
+    "end": "2025-10-30",
+    "contact": "02-6416-1756",
+    "region": "제주",
+    "detailed_location": "제주 용두암 공영주차장",
+    "URL": "http://naver.me/GLzlgC4V",
+    "description": "제주공항 활주로와 푸른 제주 바다를 함께 즐기는 특별한 경험!",
     "category": "마라톤온라인"
   },
   {
@@ -936,18 +936,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 무안해안 노을길 전국걷기 및 마라톤",
-    "period": "2025-11-01~2025-11-01",
-    "start": "2025-11-01",
-    "end": "2025-11-01",
-    "contact": "042-638-1080",
-    "region": "전남",
-    "detailed_location": "무안낙지공원",
-    "URL": "http://www.run1080.com/new/mini/index.php?sub=sub01_m01_c01&code=1493",
-    "description": "2025 무안 해안 노을길 전국 걷기 및 마라톤대회\n\n▶일 시 : 2025년 11월 1일(토) 오전 9시 출발 (오전 8시 집결)\n▶장 소 : 무안낙지공원\n▶주 최 : 무안군체육회\n▶주 관 : 전국마라톤협회\n▶후 원 : 무안군\n▶협 력 : 월드런(world run), 삼익전자(주)\n\n종목별 참가 기념품 외에 모든 참가자분들께 지역상품권(5,000원)을 증정합니다!\n\n많은 관심과 성원 부탁드립니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 강철 런페스타 IN 충북 보은",
     "period": "2025-11-01~2025-11-01",
     "start": "2025-11-01",
@@ -957,6 +945,18 @@
     "detailed_location": "충북 보은군 공설운동장 일대",
     "URL": "http://2025runfesta.imweb.me",
     "description": "행사명: 2025 강철 런페스타 IN 충북 보은\n\n일시: 2025년 11월 1일(토)\n\n장소: 충북 보은군 공설운동장 및 일대\n-10Km : 13:30 출발\n-5Km : 14:00 출발\n※ 본 대회는 사전 온라인 신청자에 한해, 당일 현장 등록 후 참가 가능합니다. 총 6,000명 *선착순 모집\n\n접수기간: 2025년 9월 22일(월) 11:00 ~ 10월 12일(일)\n*선착순 6,000명 접수 시 마감\n\n참가비: 참가자 전원 5만원 (5Km/10Km 동일)\n\n시상안내: 코스별 남녀 개별 시상\n총 2,000만원 상당의 상금 및 상품 시상(스페셜 프로그램 시상 포함)\n\n*세부사항은 홈페이지 참고해 주시면 감사하겠습니다",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 무안해안 노을길 전국걷기 및 마라톤",
+    "period": "2025-11-01~2025-11-01",
+    "start": "2025-11-01",
+    "end": "2025-11-01",
+    "contact": "042-638-1080",
+    "region": "전남",
+    "detailed_location": "무안낙지공원",
+    "URL": "http://www.run1080.com/new/mini/index.php?sub=sub01_m01_c01&code=1493",
+    "description": "2025 무안 해안 노을길 전국 걷기 및 마라톤대회\n\n▶일 시 : 2025년 11월 1일(토) 오전 9시 출발 (오전 8시 집결)\n▶장 소 : 무안낙지공원\n▶주 최 : 무안군체육회\n▶주 관 : 전국마라톤협회\n▶후 원 : 무안군\n▶협 력 : 월드런(world run), 삼익전자(주)\n\n종목별 참가 기념품 외에 모든 참가자분들께 지역상품권(5,000원)을 증정합니다!\n\n많은 관심과 성원 부탁드립니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1056,18 +1056,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 jtbc 서울마라톤",
-    "period": "2025-11-02~2025-11-02",
-    "start": "2025-11-02",
-    "end": "2025-11-02",
-    "contact": "02-2031-1935",
-    "region": "서울",
-    "detailed_location": "상암동 월드컵경기장",
-    "URL": "http://marathon.jtbc.com",
-    "description": "접수일정 : https://blog.naver.com/runable_original/223749715602\n접수홈페이지 https://runable.me/",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "정읍 공동체 프리마켓 마라톤",
     "period": "2025-11-02~2025-11-02",
     "start": "2025-11-02",
@@ -1077,6 +1065,18 @@
     "detailed_location": "정읍시 정읍천변 어린이축구장",
     "URL": "http://정읍공동체프리마켓마라톤.kr",
     "description": "기념품은 정읍에서 활동하고 있는 공동체들이 만든 제품으로 준비했으며,\n공동체들의 다양한 제품이 프리마켓을 통해 홍보 할 예정입니다.\n보는 재미와 정읍의 특산품을 만나 볼 수 있도록 준비하고 있으며, 정읍의 아름다운 멋과 맛을 느낄 수 있는 대회입니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 jtbc 서울마라톤",
+    "period": "2025-11-02~2025-11-02",
+    "start": "2025-11-02",
+    "end": "2025-11-02",
+    "contact": "02-2031-1935",
+    "region": "서울",
+    "detailed_location": "상암동 월드컵경기장",
+    "URL": "http://marathon.jtbc.com",
+    "description": "접수일정 : https://blog.naver.com/runable_original/223749715602\n접수홈페이지 https://runable.me/",
     "category": "마라톤온라인"
   },
   {
@@ -1236,18 +1236,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제1회 완주 만경강마라톤",
-    "period": "2025-11-09~2025-11-09",
-    "start": "2025-11-09",
-    "end": "2025-11-09",
-    "contact": "010-5186-0970",
-    "region": "전북",
-    "detailed_location": "봉동교인근(마를버스차고지)",
-    "URL": "http://wjrun.kr",
-    "description": "청정완주지역에서\n만경강 생태보존을 위한 친환경적인 마라톤대회로 준비하였습니다\n\n하프코스 700명\n10Km코스 1,300명\n5Km코스 1,000명 선착순으로 모집함니다",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제19회 자원봉사 사랑 굿펀마라톤",
     "period": "2025-11-09~2025-11-09",
     "start": "2025-11-09",
@@ -1257,6 +1245,18 @@
     "detailed_location": "신정교하부육상트랙구장",
     "URL": "http://자원봉사마라톤.kr",
     "description": "제19회 자원봉사 사랑 굿펀마라톤대회가 개최됩니다.\n많은 참가자 참여 바랍니다.\n감사합니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제1회 완주 만경강마라톤",
+    "period": "2025-11-09~2025-11-09",
+    "start": "2025-11-09",
+    "end": "2025-11-09",
+    "contact": "010-5186-0970",
+    "region": "전북",
+    "detailed_location": "봉동교인근(마를버스차고지)",
+    "URL": "http://wjrun.kr",
+    "description": "청정완주지역에서\n만경강 생태보존을 위한 친환경적인 마라톤대회로 준비하였습니다\n\n하프코스 700명\n10Km코스 1,300명\n5Km코스 1,000명 선착순으로 모집함니다",
     "category": "마라톤온라인"
   },
   {
@@ -1300,11 +1300,11 @@
     "period": "2025-11-09~2025-11-09",
     "start": "2025-11-09",
     "end": "2025-11-09",
-    "contact": "1833-8910",
+    "contact": "1111-1111",
     "region": "경기",
     "detailed_location": "탄천종합운동장",
     "URL": "http://bluerun1114.co.kr",
-    "description": "작년에 극찬이었던! 세계당뇨병의 날 기념 SPOTVNEWS블루런이 돌아왔다!\n올해는 성남 탄천운동장에서 모여 도로로 나간다?\n러닝도 하고 기념품 받고 다양한 행사까지!",
+    "description": "작년에 극찬이었던! 세계당뇨병의 날 기념 SPOTVNEWS블루런이 돌아왔다!\n올해는 성남 탄천운동장에서 모여 도로로 나간다?\n러닝도 하고 기념품 받고 다양한 행사까지!\n\n카카오톡 문의만 가능합니다",
     "category": "마라톤온라인"
   },
   {
@@ -1740,18 +1740,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "가을철산불조심\n한국서울마라톤",
-    "period": "2025-11-16~2025-11-16",
-    "start": "2025-11-16",
-    "end": "2025-11-16",
-    "contact": "02-424-2195",
-    "region": "서울",
-    "detailed_location": "광평교운동장\n송파족구장",
-    "URL": "http://koreatrail.net",
-    "description": "산불조심은 누구나가 조심해야 하니 달리기를 통해 홍보를 하여야 합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 MBN 서울마라톤",
     "period": "2025-11-16~2025-11-16",
     "start": "2025-11-16",
@@ -1761,6 +1749,18 @@
     "detailed_location": "광화문 광장",
     "URL": "http://www.mbn-seoulmarathon.com/",
     "description": "- 사전 정보 등록: 2025년 7월 25일(금) ~ 7월 29일(화)\n- HALF 접수일: 2025년 7월 30일(수)\n- 10KM 접수일: 2025년 7월 31일(목)\n- 접수 방법: 공식 홈페이지",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "가을철산불조심\n한국서울마라톤",
+    "period": "2025-11-16~2025-11-16",
+    "start": "2025-11-16",
+    "end": "2025-11-16",
+    "contact": "02-424-2195",
+    "region": "서울",
+    "detailed_location": "광평교운동장\n송파족구장",
+    "URL": "http://koreatrail.net",
+    "description": "산불조심은 누구나가 조심해야 하니 달리기를 통해 홍보를 하여야 합니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1908,18 +1908,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 슬로우런",
-    "period": "2025-11-29~2025-11-29",
-    "start": "2025-11-29",
-    "end": "2025-11-29",
-    "contact": "02-332-3247",
-    "region": "서울",
-    "detailed_location": "상암 월드컵공원",
-    "URL": "http://slowrun.kr",
-    "description": "2025 슬로우런 마라톤\n\n슬로우 다운, 슬로우 라이프, 슬로우 런!\nSlow Down, Slow Life, Slow Run!\n내 페이스가 가장 완벽한 페이스!\n\n2025. 11. 29. 월드컵공원 평화굉장",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제20회 광진구연맹회장배 육상대회",
     "period": "2025-11-29~2025-11-29",
     "start": "2025-11-29",
@@ -1929,6 +1917,18 @@
     "detailed_location": "중곡동 중랑천 물놀이장 옆",
     "URL": "http://ksgaaf.co.kr/",
     "description": "안녕하세요:)\n광진구육상연맹입니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 슬로우런",
+    "period": "2025-11-29~2025-11-29",
+    "start": "2025-11-29",
+    "end": "2025-11-29",
+    "contact": "02-332-3247",
+    "region": "서울",
+    "detailed_location": "상암 월드컵공원",
+    "URL": "http://slowrun.kr",
+    "description": "2025 슬로우런 마라톤\n\n슬로우 다운, 슬로우 라이프, 슬로우 런!\nSlow Down, Slow Life, Slow Run!\n내 페이스가 가장 완벽한 페이스!\n\n2025. 11. 29. 월드컵공원 평화굉장",
     "category": "마라톤온라인"
   },
   {
@@ -2028,18 +2028,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제3회 영남알프스 전국 하프마라톤",
-    "period": "2025-11-30~2025-11-30",
-    "start": "2025-11-30",
-    "end": "2025-11-30",
-    "contact": "010-4741-5959",
-    "region": "울산",
-    "detailed_location": "울주군 영남알프스 일원",
-    "URL": "http://영남알프스마라톤.kr",
-    "description": "울산광역시 울주군 영남알프스의 풍경을 전국에 홍보하기 위해 울주군과 협조하여 대회를 개최 합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 긍정하프마라톤",
     "period": "2025-11-30~2025-11-30",
     "start": "2025-11-30",
@@ -2049,6 +2037,18 @@
     "detailed_location": "뚝섬 한강공원 수변무대",
     "URL": "http://www.goodrunner.co.kr/race/race.html?id=93",
     "description": "긍정의 힘 마라톤",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제3회 영남알프스 전국 하프마라톤",
+    "period": "2025-11-30~2025-11-30",
+    "start": "2025-11-30",
+    "end": "2025-11-30",
+    "contact": "010-4741-5959",
+    "region": "울산",
+    "detailed_location": "울주군 영남알프스 일원",
+    "URL": "http://영남알프스마라톤.kr",
+    "description": "울산광역시 울주군 영남알프스의 풍경을 전국에 홍보하기 위해 울주군과 협조하여 대회를 개최 합니다.",
     "category": "마라톤온라인"
   },
   {
@@ -2088,18 +2088,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 전마협 Gold Run Race",
-    "period": "2025-12-07~2025-12-07",
-    "start": "2025-12-07",
-    "end": "2025-12-07",
-    "contact": "042-638-1080",
-    "region": "충남",
-    "detailed_location": "금산인삼엑스포 주차장",
-    "URL": "http://www.run1080.com/new/mini/index.php?code=1499",
-    "description": "2025 전마협 Gold Run Race\n\n◆ 일 시 : 2025년 12월 7일 (일)\n◆ 출 발 : 오전 9시 30분 (집결 오전 8시 30분)\n◆ 장 소 : 금산인삼엑스포 주차장\n◆ 주 최 : 전국마라톤협회\n◆ 후 원 : 금산군\n◆ 협 력 : 월드런, 전사모, 금산마라톤연합\n◆ 종 목 : 5km, 12km\n\n많은 시상과 부상품으로 월드런 카본제트4 마라톤화를 준비했습니다.\n\n선착순 2000명 마감되므로 위 기간보다 조기 마감될 수 있습니다.\n\n전마협과 함께 Gold Run Race 함께해요!",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제3회 시즌오프레이스",
     "period": "2025-12-13~2025-12-13",
     "start": "2025-12-13",
@@ -2109,6 +2097,18 @@
     "detailed_location": "서울 뚝섬한강공원 수변광장",
     "URL": "http://www.irunman.kr",
     "description": "2025년 12월 13일(토) 제3회 시즌오프레이스를 서울 뚝섬한강공원 수변광장에서 개최하오니 동호인 및 달림이 참가자 여러분의 많은 참여와 성원 부탁드립니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 전마협 Gold Run Race",
+    "period": "2025-12-07~2025-12-07",
+    "start": "2025-12-07",
+    "end": "2025-12-07",
+    "contact": "042-638-1080",
+    "region": "충남",
+    "detailed_location": "금산인삼엑스포 주차장",
+    "URL": "http://www.run1080.com/new/mini/index.php?code=1499",
+    "description": "2025 전마협 Gold Run Race\n\n◆ 일 시 : 2025년 12월 7일 (일)\n◆ 출 발 : 오전 9시 30분 (집결 오전 8시 30분)\n◆ 장 소 : 금산인삼엑스포 주차장\n◆ 주 최 : 전국마라톤협회\n◆ 후 원 : 금산군\n◆ 협 력 : 월드런, 전사모, 금산마라톤연합\n◆ 종 목 : 5km, 12km\n\n많은 시상과 부상품으로 월드런 카본제트4 마라톤화를 준비했습니다.\n\n선착순 2000명 마감되므로 위 기간보다 조기 마감될 수 있습니다.\n\n전마협과 함께 Gold Run Race 함께해요!",
     "category": "마라톤온라인"
   },
   {
@@ -2124,18 +2124,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2025 부산바다마라톤",
-    "period": "2025-10-26~2025-10-26",
-    "start": "2025-10-26",
-    "end": "2025-10-26",
-    "contact": "051-461-4046",
-    "region": "부산",
-    "detailed_location": "해운대 벡스코 야외광장",
-    "URL": "http://marathon.busan.com",
-    "description": "부산바다마라톤\n도시, 바다 그리고 러닝\n\nCity, sea, and running...\n우리의 가슴을 뛰게할 부산\n\n\"Busan\" that will make our hearts race\n\n세계적으로 보기 드문 오션로드뷰\n\nBusan with one of the few ocean road views in the world!\n달리면서 느끼게 될 최고의 하이브릿지뷰\n\nThe best high bridge view you'll get while running!\n부.산.바.다.마.라.톤!\n\nLet's feel it at the Busan Ocean Marathon!",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2025 무등산 구석구석 트레킹탐방",
     "period": "2025-11-30~2025-11-30",
     "start": "2025-11-30",
@@ -2145,6 +2133,18 @@
     "detailed_location": "조선대학교/무등산",
     "URL": "http://www.cuk-sports.co.kr/",
     "description": "공지한 코스는 지자체와 국립공원과 협의후 취소 및 변경될수있습니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2025 부산바다마라톤",
+    "period": "2025-10-26~2025-10-26",
+    "start": "2025-10-26",
+    "end": "2025-10-26",
+    "contact": "051-461-4046",
+    "region": "부산",
+    "detailed_location": "해운대 벡스코 야외광장",
+    "URL": "http://marathon.busan.com",
+    "description": "부산바다마라톤\n도시, 바다 그리고 러닝\n\nCity, sea, and running...\n우리의 가슴을 뛰게할 부산\n\n\"Busan\" that will make our hearts race\n\n세계적으로 보기 드문 오션로드뷰\n\nBusan with one of the few ocean road views in the world!\n달리면서 느끼게 될 최고의 하이브릿지뷰\n\nThe best high bridge view you'll get while running!\n부.산.바.다.마.라.톤!\n\nLet's feel it at the Busan Ocean Marathon!",
     "category": "마라톤온라인"
   }
 ]
