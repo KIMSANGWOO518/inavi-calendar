@@ -1,17 +1,5 @@
 [
   {
-    "festival_name": "2026 전마협 별들의전쟁&꽃들의전쟁 클럽대항",
-    "period": "2026-02-08~2026-02-08",
-    "start": "2026-02-08",
-    "end": "2026-02-08",
-    "contact": "042-638-1080",
-    "region": "충남",
-    "detailed_location": "금산인삼엑스포주차장",
-    "URL": "http://www.run1080.com/new/mini/index.php?code=1527",
-    "description": "2026 전마협 별들의 전쟁 & 꽃들의 전쟁 클럽대항전\n\n◆ 클럽대항전 1개 클럽에서 A, B, C 3개 클럽 출전 가능\n\n◆ 신발은 자유\n\n선착순 1500명 신청 및 입금자 선착순 마감됩니다.\n\n많은 관심과 참여 바랍니다. 감사합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 평창 대관령 알몸 마라톤",
     "period": "2026-02-14~2026-02-14",
     "start": "2026-02-14",
@@ -36,6 +24,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "2026 전마협 별들의전쟁&꽃들의전쟁 클럽대항",
+    "period": "2026-02-08~2026-02-08",
+    "start": "2026-02-08",
+    "end": "2026-02-08",
+    "contact": "042-638-1080",
+    "region": "충남",
+    "detailed_location": "금산인삼엑스포주차장",
+    "URL": "http://www.run1080.com/new/mini/index.php?code=1527",
+    "description": "2026 전마협 별들의 전쟁 & 꽃들의 전쟁 클럽대항전\n\n◆ 클럽대항전 1개 클럽에서 A, B, C 3개 클럽 출전 가능\n\n◆ 신발은 자유\n\n선착순 1500명 신청 및 입금자 선착순 마감됩니다.\n\n많은 관심과 참여 바랍니다. 감사합니다.",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "제3회 산들소리향기마라톤",
     "period": "2026-02-08~2026-02-08",
     "start": "2026-02-08",
@@ -45,6 +45,18 @@
     "detailed_location": "상암 월드컵공원 평화광장",
     "URL": "http://recyclerun.kr/",
     "description": "제3회 산들소리향기마라톤은 자연의 푸르름, 사람의 따뜻함, 환경 그리고 달리는 발걸음이 만들어내는\n희망의 마라톤으로 기획된 마라톤입니다\n전국 그리고 지역과 사람이 어우러지는 더 포근하고 감성적인 마라톤 축제로 여러분과 함께하고자 합니다.\n\n(구)리사이클 환경마라톤",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 순천만국가정원 윷놀이런",
+    "period": "2026-02-18~2026-02-18",
+    "start": "2026-02-18",
+    "end": "2026-02-18",
+    "contact": "070-5088-1180",
+    "region": "전남",
+    "detailed_location": "순천만국가정원 동문",
+    "URL": "http://projectruntrip-pre.linkstory.co.kr/",
+    "description": "순천만국가정원의 풍경을 바라보며 뛰는 러닝 행사입니다.\n기록칩 / 메달 제공되지 않습니다.",
     "category": "마라톤온라인"
   },
   {
@@ -96,18 +108,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "엘리트x마스터즈2026제주MBC국제평화마라톤",
-    "period": "2026-02-22~2026-02-22",
-    "start": "2026-02-22",
-    "end": "2026-02-22",
-    "contact": "064-748-9021",
-    "region": "제주",
-    "detailed_location": "한림종합운동장",
-    "URL": "http://marathon.jejumbc.com/",
-    "description": "23년의 검증된 운영으로\n엘리트와 마스터즈가 한 코스에서\n함께 달리는 도내 유일의 통합 대회",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 고구려 마라톤",
     "period": "2026-02-22~2026-02-22",
     "start": "2026-02-22",
@@ -117,6 +117,18 @@
     "detailed_location": "뚝섬한강공원 수변무대",
     "URL": "http://runable.me/product/3212?comp=3203",
     "description": "고구려마라톤",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "엘리트x마스터즈2026제주MBC국제평화마라톤",
+    "period": "2026-02-22~2026-02-22",
+    "start": "2026-02-22",
+    "end": "2026-02-22",
+    "contact": "064-748-9021",
+    "region": "제주",
+    "detailed_location": "한림종합운동장",
+    "URL": "http://marathon.jejumbc.com/",
+    "description": "23년의 검증된 운영으로\n엘리트와 마스터즈가 한 코스에서\n함께 달리는 도내 유일의 통합 대회",
     "category": "마라톤온라인"
   },
   {
@@ -156,18 +168,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제22회 밀양아리랑마라톤",
-    "period": "2026-02-22~2026-02-22",
-    "start": "2026-02-22",
-    "end": "2026-02-22",
-    "contact": "055-359-5965",
-    "region": "경남",
-    "detailed_location": "밀양종합운동장",
-    "URL": "http://www.miryangmarathon.com",
-    "description": "밀양마라톤",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제9회 산불조심\n한국서울마라톤",
     "period": "2026-02-22~2026-02-22",
     "start": "2026-02-22",
@@ -177,6 +177,18 @@
     "detailed_location": "탄천광평 운동장",
     "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20251010095641&csno=20190605121808#baseline",
     "description": "사불조심 송파에 있는 신문사 검색 순의 1위 이넷 뉴스와 봄철 산불조심을 함께 합니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제22회 밀양아리랑마라톤",
+    "period": "2026-02-22~2026-02-22",
+    "start": "2026-02-22",
+    "end": "2026-02-22",
+    "contact": "055-359-5965",
+    "region": "경남",
+    "detailed_location": "밀양종합운동장",
+    "URL": "http://www.miryangmarathon.com",
+    "description": "밀양마라톤",
     "category": "마라톤온라인"
   },
   {
@@ -204,18 +216,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "부산 영도트레일런",
-    "period": "2026-02-28~2026-02-28",
-    "start": "2026-02-28",
-    "end": "2026-02-28",
-    "contact": "010-3526-9120",
-    "region": "부산",
-    "detailed_location": "남항대교 수변야외공연장",
-    "URL": "http://www.mtrailrun.kr",
-    "description": "부산 영도해변 흰여울길을 따라 태종대 한바퀴를 돌아. 다시 해변길을 달리는 왕복코스입니다",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 보스턴 영웅 마라톤",
     "period": "2026-02-28~2026-02-28",
     "start": "2026-02-28",
@@ -228,6 +228,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "부산 영도트레일런",
+    "period": "2026-02-28~2026-02-28",
+    "start": "2026-02-28",
+    "end": "2026-02-28",
+    "contact": "010-3526-9120",
+    "region": "부산",
+    "detailed_location": "남항대교 수변야외공연장",
+    "URL": "http://www.mtrailrun.kr",
+    "description": "부산 영도해변 흰여울길을 따라 태종대 한바퀴를 돌아. 다시 해변길을 달리는 왕복코스입니다",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "삼일절 컴포트 선언 러닝",
     "period": "2026-03-01~2026-03-01",
     "start": "2026-03-01",
@@ -237,18 +249,6 @@
     "detailed_location": "여의도 공원 비행기 전시관",
     "URL": "http://www.instagram.com/comport.official/",
     "description": "삼일절 컴포트 선언 러닝은 삼일절을 기념함과 동시에,\n독립선언문에서 착안한 러닝 프로그램으로,\n의지와 방향을 선언하는 러닝입니다.\n독립선언문이 결심과 다짐의 선언이었듯,\n이번 러닝은 각자가 2026년을 관통할 다짐을 스스로 공표하고 이를 행동으로 실천해 나가는 것을 목표로 합니다.\n\n📌 모집 기간\n26.02.02(월) ~ 26.02.22(일) (환불 기간 동일)\n\n📌 활동 기간\n26.03.01(일) ~ 26.03.03(화)\n\n📌 참가 인원 (선착순)\n-합동러닝 100명\n-비대면러닝 400명\n\n📌 참가비\n\n31,000원 (입금 완료 시 참가 확정)\n\n🏃‍♂️ 코스 선택\n-합동 러닝: 기미년 코스 (19.19K 확정, 여의도 공원)\n\n*비대면은 자율 코스\n-비대면 개인 러닝: 독립 코스(31K 러닝 or 3.1K 러닝 OR 3.1K 트레일러닝) 기미년 코스(19.19K) 중 택1\n-비대면 팀 러닝: 독립 코스 (31K 확정)",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "제61회 광주일보 3.1절 전국마라톤",
-    "period": "2026-03-01~2026-03-01",
-    "start": "2026-03-01",
-    "end": "2026-03-01",
-    "contact": "061-375-1201",
-    "region": "전남",
-    "detailed_location": "화순파크골프장",
-    "URL": "http://31marathon.kr/",
-    "description": "종목 10km, 하프 2종목 총 인원 800명으로 선착순접수 받습니다.\n조기마감 될수 있으므로, 접수기간 확인후 접수 부탁드립니다.",
     "category": "마라톤온라인"
   },
   {
@@ -276,39 +276,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 머니투데이방송 삼일절 마라톤",
+    "festival_name": "제61회 광주일보 3.1절 전국마라톤",
     "period": "2026-03-01~2026-03-01",
     "start": "2026-03-01",
     "end": "2026-03-01",
-    "contact": "042-638-1080",
-    "region": "서울",
-    "detailed_location": "뚝섬한강공원 수변무대",
-    "URL": "http://www.samilrun.com/",
-    "description": "2026 머니투데이방송 삼일절 마라톤 대회\n\n● 일시 : 2026년 3월 1일(일) 오전 9시\n● 장소 : 뚝섬한강공원 수변무대\n● 주최 : (주)머니투데이방송\n● 주관 : 전국마라톤협회\n● 후원 : 문화체육관광부, 국가보훈부, 광진구\n● 협찬 : 신한금융그룹, 하나금융그룹, 캐리어에어컨, 자담치킨,\n농심 백산수, 르피랩\n● 협력 : 월드런, 전사모 페이싱팀\n\n*3.1절 의미에 맞는 이색 복장상 시상*\n\n선착순 7000명 마감예정 (신청 및 입금자)\n\n조기마감 될 수 있으니 접수를 서둘러 주시기 바랍니다.",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "2026 3.1절기념 제27회 건강달리기",
-    "period": "2026-03-01~2026-03-01",
-    "start": "2026-03-01",
-    "end": "2026-03-01",
-    "contact": "033-264-1365",
-    "region": "강원",
-    "detailed_location": "춘천 강원일보사 앞 특설행사장",
-    "URL": "http://kw-marathon.com/",
-    "description": "-",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "2026 구미 박정희 마라톤",
-    "period": "2026-03-01~2026-03-01",
-    "start": "2026-03-01",
-    "end": "2026-03-01",
-    "contact": "02-2208-7243",
-    "region": "경북",
-    "detailed_location": "구미시민운동장",
-    "URL": "http://www.gumimarathon.com",
-    "description": "",
+    "contact": "061-375-1201",
+    "region": "전남",
+    "detailed_location": "화순파크골프장",
+    "URL": "http://31marathon.kr/",
+    "description": "종목 10km, 하프 2종목 총 인원 800명으로 선착순접수 받습니다.\n조기마감 될수 있으므로, 접수기간 확인후 접수 부탁드립니다.",
     "category": "마라톤온라인"
   },
   {
@@ -324,15 +300,51 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제21회 부산 비치울트라 마라톤 대회",
-    "period": "2026-03-07~2026-03-07",
-    "start": "2026-03-07",
-    "end": "2026-03-07",
-    "contact": "010-4568-8946",
-    "region": "부산",
-    "detailed_location": "부산 다대포 해수욕장 주치장",
-    "URL": "http://beachultra.kr",
-    "description": "대한 울트라 연맹 공식 후원 대회",
+    "festival_name": "2026 3.1절기념 제27회 건강달리기",
+    "period": "2026-03-01~2026-03-01",
+    "start": "2026-03-01",
+    "end": "2026-03-01",
+    "contact": "033-264-1365",
+    "region": "강원",
+    "detailed_location": "춘천 강원일보사 앞 특설행사장",
+    "URL": "http://kw-marathon.com/",
+    "description": "-",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 머니투데이방송 삼일절 마라톤",
+    "period": "2026-03-01~2026-03-01",
+    "start": "2026-03-01",
+    "end": "2026-03-01",
+    "contact": "042-638-1080",
+    "region": "서울",
+    "detailed_location": "뚝섬한강공원 수변무대",
+    "URL": "http://www.samilrun.com/",
+    "description": "2026 머니투데이방송 삼일절 마라톤 대회\n\n● 일시 : 2026년 3월 1일(일) 오전 9시\n● 장소 : 뚝섬한강공원 수변무대\n● 주최 : (주)머니투데이방송\n● 주관 : 전국마라톤협회\n● 후원 : 문화체육관광부, 국가보훈부, 광진구\n● 협찬 : 신한금융그룹, 하나금융그룹, 캐리어에어컨, 자담치킨,\n농심 백산수, 르피랩\n● 협력 : 월드런, 전사모 페이싱팀\n\n*3.1절 의미에 맞는 이색 복장상 시상*\n\n선착순 7000명 마감예정 (신청 및 입금자)\n\n조기마감 될 수 있으니 접수를 서둘러 주시기 바랍니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 구미 박정희 마라톤",
+    "period": "2026-03-01~2026-03-01",
+    "start": "2026-03-01",
+    "end": "2026-03-01",
+    "contact": "02-2208-7243",
+    "region": "경북",
+    "detailed_location": "구미시민운동장",
+    "URL": "http://www.gumimarathon.com",
+    "description": "",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 Run your way HALF",
+    "period": "2026-03-02~2026-03-02",
+    "start": "2026-03-02",
+    "end": "2026-03-02",
+    "contact": "02-312-1998",
+    "region": "서울",
+    "detailed_location": "광화문광장",
+    "URL": "http://www.instagram.com/NBRC_SEOUL/",
+    "description": "뉴발란스 대회",
     "category": "마라톤온라인"
   },
   {
@@ -345,6 +357,18 @@
     "detailed_location": "광명 안양천 어린이 물놀이장",
     "URL": "http://sgrun.kr/",
     "description": "여러분의 힘찬 발걸음 하나하나가 서울경기육상연합의 미래를 밝히고 건강한 스포츠 문화를 만들어 갑니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제21회 부산 비치울트라 마라톤 대회",
+    "period": "2026-03-07~2026-03-07",
+    "start": "2026-03-07",
+    "end": "2026-03-07",
+    "contact": "010-4568-8946",
+    "region": "부산",
+    "detailed_location": "부산 다대포 해수욕장 주치장",
+    "URL": "http://beachultra.kr",
+    "description": "대한 울트라 연맹 공식 후원 대회",
     "category": "마라톤온라인"
   },
   {
@@ -372,18 +396,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 예천군민 마스터즈",
-    "period": "2026-03-08~2026-03-08",
-    "start": "2026-03-08",
-    "end": "2026-03-08",
-    "contact": "054-654-3801",
-    "region": "경북",
-    "detailed_location": "예천청소년수련관",
-    "URL": "http://www.ycg.kr/open.content/ko/administrative/news/notice/?i=175950",
-    "description": "참가비 무료",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제16회 여의도 벚꽃 마라톤",
     "period": "2026-03-08~2026-03-08",
     "start": "2026-03-08",
@@ -393,6 +405,18 @@
     "detailed_location": "여의도 물빛무대 앞 광장",
     "URL": "http://xn--js0bk9fwvdgzcd5e88r2kcx06a.kr/",
     "description": "2026년 16회 여의도 벚꽃 마라톤대회가 개최합니다.\n많은 참여 바랍니다.\n감사합니다!!",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 예천군민 마스터즈",
+    "period": "2026-03-08~2026-03-08",
+    "start": "2026-03-08",
+    "end": "2026-03-08",
+    "contact": "054-654-3801",
+    "region": "경북",
+    "detailed_location": "예천청소년수련관",
+    "URL": "http://www.ycg.kr/open.content/ko/administrative/news/notice/?i=175950",
+    "description": "참가비 무료",
     "category": "마라톤온라인"
   },
   {
@@ -420,18 +444,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 성주참외 전국마라톤",
-    "period": "2026-03-08~2026-03-08",
-    "start": "2026-03-08",
-    "end": "2026-03-08",
-    "contact": "054-931-1414",
-    "region": "경북",
-    "detailed_location": "성주별고을운동장",
-    "URL": "http://sjmelon.kr/",
-    "description": "2026성주참외전국마라톤대회",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 고양특례시 하프마라톤",
     "period": "2026-03-08~2026-03-08",
     "start": "2026-03-08",
@@ -441,6 +453,18 @@
     "detailed_location": "고양종합운동장",
     "URL": "http://www.goyangmarathon.com/",
     "description": "하프 70,000원 / 10K 60,000원 / 5K 40,000원\n하프: 2008년3월 8일 이전 출생자\n10K: 2012년3월 8일 이전 출생자",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 성주참외 전국마라톤",
+    "period": "2026-03-08~2026-03-08",
+    "start": "2026-03-08",
+    "end": "2026-03-08",
+    "contact": "054-931-1414",
+    "region": "경북",
+    "detailed_location": "성주별고을운동장",
+    "URL": "http://sjmelon.kr/",
+    "description": "2026성주참외전국마라톤대회",
     "category": "마라톤온라인"
   },
   {
@@ -468,18 +492,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 JUST RUN10 청주",
-    "period": "2026-03-21~2026-03-21",
-    "start": "2026-03-21",
-    "end": "2026-03-21",
-    "contact": "042-710-2058",
-    "region": "충북",
-    "detailed_location": "무심천체육공원",
-    "URL": "http://runten.co.kr",
-    "description": "PB 달성이 가장 쉬운 확실한 공식대회\n\n- 병목없는 레이스, 티어별 스타트\n\n- 업힐 없는 국내 최고의 평지 코스\n\n- 강변을 따라 달리는 힐링 코스\n\n- 차량통제 필요없는 안전한 코스\n\n- 10K, 5K 모두 기록칩 완벽 지원\n\n- 100명 이상의 경품, 최고 수준의 상금",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 서울마라톤",
     "period": "2026-03-15~2026-03-15",
     "start": "2026-03-15",
@@ -489,6 +501,18 @@
     "detailed_location": "광화문광장",
     "URL": "http://seoul-marathon.com",
     "description": "동아마라톤 겸 서울국제마라톤",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 JUST RUN10 청주",
+    "period": "2026-03-21~2026-03-21",
+    "start": "2026-03-21",
+    "end": "2026-03-21",
+    "contact": "042-710-2058",
+    "region": "충북",
+    "detailed_location": "무심천체육공원",
+    "URL": "http://runten.co.kr",
+    "description": "PB 달성이 가장 쉬운 확실한 공식대회\n\n- 병목없는 레이스, 티어별 스타트\n\n- 업힐 없는 국내 최고의 평지 코스\n\n- 강변을 따라 달리는 힐링 코스\n\n- 차량통제 필요없는 안전한 코스\n\n- 10K, 5K 모두 기록칩 완벽 지원\n\n- 100명 이상의 경품, 최고 수준의 상금",
     "category": "마라톤온라인"
   },
   {
@@ -528,18 +552,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 지리산봄꽃레이스",
-    "period": "2026-03-21~2026-03-21",
-    "start": "2026-03-21",
-    "end": "2026-03-21",
-    "contact": "070-8880-0352",
-    "region": "전남",
-    "detailed_location": "구례 토지면 일대",
-    "URL": "http://jirisanrace.com/",
-    "description": "소소하지만 알찬레이스! “다시 피어나는 봄, 다시 뛰는 나.”",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 내포마라톤",
     "period": "2026-03-21~2026-03-21",
     "start": "2026-03-21",
@@ -552,39 +564,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제24회 성우하이텍배 KNN환경마라톤",
-    "period": "2026-03-22~2026-03-22",
-    "start": "2026-03-22",
-    "end": "2026-03-22",
-    "contact": "1522-4897",
-    "region": "부산",
-    "detailed_location": "BEXCO제1전시장 3홀",
-    "URL": "http://marathon.knn.co.kr",
-    "description": "10km, 5km",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "제3회 불패 마라톤",
-    "period": "2026-03-22~2026-03-22",
-    "start": "2026-03-22",
-    "end": "2026-03-22",
-    "contact": "02-569-5551",
-    "region": "서울",
-    "detailed_location": "여의도공원 문화의 마당",
-    "URL": "http://bulpaerun.com/",
-    "description": "제3회 불패 마라톤에서 새로운 도전을 해보시고, 한강변을 달리며 지인.가족과 좋은 추억을 쌓으시며\n각자 페이스에 맞춰 안전하게 달려주시고, 건강과 행복이 가득하시길 기원드립니다.",
-    "category": "마라톤온라인"
-  },
-  {
-    "festival_name": "제26회 인천국제하프마라톤",
-    "period": "2026-03-22~2026-03-22",
-    "start": "2026-03-22",
-    "end": "2026-03-22",
-    "contact": "1866-1718",
-    "region": "인천",
-    "detailed_location": "인천문학경기장",
-    "URL": "http://www.incheonmarathon.co.kr/",
-    "description": "2026년 인천국제하프마라톤대회\n2026년 1월 5(월) 접수예정!",
+    "festival_name": "2026 지리산봄꽃레이스",
+    "period": "2026-03-21~2026-03-21",
+    "start": "2026-03-21",
+    "end": "2026-03-21",
+    "contact": "070-8880-0352",
+    "region": "전남",
+    "detailed_location": "구례 토지면 일대",
+    "URL": "http://jirisanrace.com/",
+    "description": "소소하지만 알찬레이스! “다시 피어나는 봄, 다시 뛰는 나.”",
     "category": "마라톤온라인"
   },
   {
@@ -600,6 +588,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제26회 인천국제하프마라톤",
+    "period": "2026-03-22~2026-03-22",
+    "start": "2026-03-22",
+    "end": "2026-03-22",
+    "contact": "1866-1718",
+    "region": "인천",
+    "detailed_location": "인천문학경기장",
+    "URL": "http://www.incheonmarathon.co.kr/",
+    "description": "2026년 인천국제하프마라톤대회\n2026년 1월 5(월) 접수예정!",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "2026 서울 K-마라톤",
     "period": "2026-03-22~2026-03-22",
     "start": "2026-03-22",
@@ -612,18 +612,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 산불조심\n한국남산우정마라톤",
-    "period": "2026-03-22~2026-03-22",
-    "start": "2026-03-22",
-    "end": "2026-03-22",
-    "contact": "02-424-2195",
-    "region": "서울",
-    "detailed_location": "남산 동국대 정문",
-    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250511200816&csno=20220129141659#baseline",
-    "description": "봄철은 산불이 많은 관계로 일찍 달려면서 홍보합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제2회 영광 광풍 마라톤",
     "period": "2026-03-22~2026-03-22",
     "start": "2026-03-22",
@@ -633,6 +621,18 @@
     "detailed_location": "영광군 영광스포티움",
     "URL": "http://yeonggwang.run1080.com/",
     "description": "제2회 영광 광풍 마라톤 대회\n\n▶일 시 : 2026년 3월 22일(일) 출발 오전 8시 30분 (오전 7시 30분 집결)\n▶장 소 : 영광스포티움\n▶주 최 : 영광군민의날 추진위원회\n▶주 관 : 전국마라톤협회\n▶후 원 : 영광군, 영광군의회, 한수원(주)한빛원자력본부\n▶협 력 : 월드런, 전사모 페이싱팀, 영광 마라톤클럽\n\n* 선착순 6,000명 마감됩니다! (접수 및 입금완료자)\n* 위 접수 기간보다 조기 마감될 수 있습니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 산불조심\n한국남산우정마라톤",
+    "period": "2026-03-22~2026-03-22",
+    "start": "2026-03-22",
+    "end": "2026-03-22",
+    "contact": "02-424-2195",
+    "region": "서울",
+    "detailed_location": "남산 동국대 정문",
+    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250511200816&csno=20220129141659#baseline",
+    "description": "봄철은 산불이 많은 관계로 일찍 달려면서 홍보합니다.",
     "category": "마라톤온라인"
   },
   {
@@ -888,6 +888,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제1회 전남대 5·18 캠퍼스 마라톤",
+    "period": "2026-04-05~2026-04-05",
+    "start": "2026-04-05",
+    "end": "2026-04-05",
+    "contact": "061-375-1201",
+    "region": "광주",
+    "detailed_location": "광주 전남대학교",
+    "URL": "http://xn--vk1b28fn4bg9oswgdukrjf16d.kr/",
+    "description": "제1회 전남대 5·18 캠퍼스 마라톤대회\n선착순 5.18km: 518명 (5.18 민주화운동), 10km: 1,187명(무등산 해발고도)\n접수 받으니, 많은 관심과 접수 부탁드립니다.",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "2026 THE RACE SEOUL 21K",
     "period": "2026-04-05~2026-04-05",
     "start": "2026-04-05",
@@ -1104,18 +1116,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제22회 창원야철마라톤",
-    "period": "2026-04-12~2026-04-12",
-    "start": "2026-04-12",
-    "end": "2026-04-12",
-    "contact": "055-210-6103",
-    "region": "경남",
-    "detailed_location": "창원스포츠파크 보조경기장",
-    "URL": "http://www.kcmarathon.co.kr",
-    "description": "\"4월 창원에서 만나요~\n신바람 달림이 여러분의 도심질주를 기다립니다.\n참가 신청하시고, 새로운 도전의 시작을 함께하세요!\n많은 관심과 참여 부탁드립니다.\"\n(접수일자 확정 후 재공지 드리겠습니다)",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "제15회 MBC섬진강꽃길마라톤",
     "period": "2026-04-12~2026-04-12",
     "start": "2026-04-12",
@@ -1125,6 +1125,18 @@
     "detailed_location": "광양시 다압면 섬진강둔치",
     "URL": "http://mbcrun.com",
     "description": "종목별 순차 접수진행 / 2월 5일(단체) / 2월 9일(하프) / 2월 10일(10km) / 2월 11일(5km) / 조기마감될 수 있습니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제22회 창원야철마라톤",
+    "period": "2026-04-12~2026-04-12",
+    "start": "2026-04-12",
+    "end": "2026-04-12",
+    "contact": "055-210-6103",
+    "region": "경남",
+    "detailed_location": "창원스포츠파크 보조경기장",
+    "URL": "http://www.kcmarathon.co.kr",
+    "description": "* 접수 시작: 2월 10일(화) 오전 10:00 ~ (선착순 4,000명)\n\n\"4월 창원에서 만나요~\n신바람 달림이 여러분의 도심질주를 기다립니다.\n참가 신청하시고, 새로운 도전의 시작을 함께하세요!\n많은 관심과 참여 부탁드립니다.\"",
     "category": "마라톤온라인"
   },
   {
@@ -1149,6 +1161,18 @@
     "detailed_location": "시청 덕수궁돌담길",
     "URL": "http://surally2406.webmaker21.kr/competition/outline?ca_id=01&wm_id=19",
     "description": "서울에서 제일 값진코스 입니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "KOLON TRAIL RUN 2026",
+    "period": "2026-04-18~2026-04-18",
+    "start": "2026-04-18",
+    "end": "2026-04-18",
+    "contact": "010-5605-9059",
+    "region": "강원",
+    "detailed_location": "강원도 횡성군 웰리힐리파크",
+    "URL": "http://www.kolonsport.com/Event/TRAIL-RUN-CONCEPT",
+    "description": "[STAY&PLAY]\n\n서두르지 않는 레이스.\n달리는 시간 그 너머\n\n이른 새벽이 아닌, 여유로운 시간에 출발하고\n시상대를 급히 마무리 하지 않은 채,\n마지막 선수가 결승선을 통과할 때까지 기다립니다.\n\n우리의 대회는, 달리는 시간 그 너머를 이야기합니다.\n\n레이스 이후에도 서두르지 마세요.\n같은 공간에 머물며 페스티벌과 음악을 즐기고,\n충분한 리커버리 후,\n다시 일상으로 돌아갑니다.\n\n기록보다,\n기억을 남깁니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1188,6 +1212,42 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제2회 마포 서윤복 마라톤",
+    "period": "2026-04-19~2026-04-19",
+    "start": "2026-04-19",
+    "end": "2026-04-19",
+    "contact": "02-2647-4488",
+    "region": "서울",
+    "detailed_location": "상암동 월드컵공원 평화광장",
+    "URL": "http://sybrun.com",
+    "description": "-1947년 대한민국 태극기를 달고 국제 마라톤 대회인 보스턴에서 최초로 우승한 서윤복선수를 기리는 마포 서윤복 마라톤대회에 마라톤 가족여러분을 모십니다",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제11회 동작구청장배 마라톤",
+    "period": "2026-04-19~2026-04-19",
+    "start": "2026-04-19",
+    "end": "2026-04-19",
+    "contact": "010-5648-0116",
+    "region": "서울",
+    "detailed_location": "노들나루 공원",
+    "URL": "http://forms.gle/GeBVXxtYZGn4xS877",
+    "description": "🏃‍♂️ 제11회 동작구청장배 달리기 대회 With 가마로강정🏃‍♂️\n\n맛있는 닭강정과 함께하는 동작구청장배 마라톤 대회가\n🔥가마로 강정(@gamaro_insta)과 함께 오픈 되었습니다.🔥\n\n달리고, 즐기고, 맛있게 마무리까지!\n\n2026년 4월 19일, 일요일 오전 9시\n서울 노들나루 공원에서 만나요!\n\n📌 참가 접수 링크\nhttps://forms.gle/GeBVXxtYZGn4xS877\n\n아래 참가 유형에 맞게 접수해 주세요👇\n✔ 일반 참가자  (동작구민 외 모든 참가자)\n✔ 동작구민 참가자 (주민등록상 동작구 거주자)\n✔ 단체 참가자 (20인 이상 단체, 대표자 접수)\n\n⚠️휴대폰 번호는 정확히 입력해 주세요.\n  (오입력 시 안내 문자 수신이 어려울 수 있습니다.)\n\n📩 문의\nDM @daaf_event\n카카오톡 채널 ‘runus’\n\n건강한 레이스, 맛있는 즐거움!\n동작육상연맹과 함께합니다!",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제 11회 기적의마라톤",
+    "period": "2026-04-19~2026-04-19",
+    "start": "2026-04-19",
+    "end": "2026-04-19",
+    "contact": "042-471-0419",
+    "region": "대전",
+    "detailed_location": "DCC 앞 갑천변",
+    "URL": "http://todagmarathon.com/",
+    "description": "□ 행사(프로그램)명:\n제11회 기적의 마라톤–11번째 기적, 당신의 발걸음이 아이들의 내일이 됩니다!\n\n□ 목적: 장애인과 비장애인이 함께 뛰며, 장애의 장벽을 넘어서는 기부마라톤\n(참가비 일부 및 수익금 장애어린이가족 지원 활동을 위한 기부 진행)\n\n□ 일시: 2026년 4월 18일(토) 16:00 이후 (무대 및 부스 설치 진행, 행사 진행 X) 2026년 4월 19일(일) 07:00-15:00 (행사 진행 후 정리 포함 시간)\n\n□ 장소: 대전시 유성구 도룡동 465-1 (대전 DCC 앞 천변)",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "2026 코리아 k건강마라톤",
     "period": "2026-04-19~2026-04-19",
     "start": "2026-04-19",
@@ -1200,18 +1260,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제23회 호남마라톤",
-    "period": "2026-04-19~2026-04-19",
-    "start": "2026-04-19",
-    "end": "2026-04-19",
-    "contact": "061-375-1201",
-    "region": "광주",
-    "detailed_location": "승촌보 영산강문화관",
-    "URL": "http://www.xn--q20bn3kn1bd06bl9e.kr/",
-    "description": "선착순 800명으로 접수 받습니다.\n많은관심과 접수 부탁드립니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 DMZ평화마라톤",
     "period": "2026-04-19~2026-04-19",
     "start": "2026-04-19",
@@ -1221,6 +1269,18 @@
     "detailed_location": "임진각 평화누리 공연장",
     "URL": "http://dmzmarathon.newstomato.com/",
     "description": "지난 2023년 뉴스토마토와 (재)우리아이재단이 한반도에서 전쟁을 예방하고,\n평화로운 세상에서 우리의 미래인 어린이들이 행복한 미래를 꿈꿀 수 있게 하기 위해 시작한\n'남과북 우리 아이들의 미래를 여는 DMZ 평화마라톤’이 올해로 4회째를 맞았습니다.\n2024년부터는 분단과 평화의 상징 도시 파주시와 함께 하고 있습니다.\n\n'남과북 우리 아이들의 미래를 여는 DMZ 평화마라톤’은 민간인이 평상시에 출입할 수 없는\n'민간인 출입통제구역(민통선 이북 지역)'이 포함된 마라톤코스를 달리며,\n평화 염원을 널리 확산하는 스포츠 행사이자 평화 행사입니다.\n\n러시아-우크라이나 전쟁과 이스라엘-팔레스타인 전쟁은 아직도 진행중이며,\n자국의 이익을 중심으로 전 세계의 전쟁 불안감은 더 커지고 있으며, 한반도 역시 예외리 수 없습니다.\n전 세계에 평화의 목소리가 더 커져야 하는 상황입니다.\n\n올해도 이번 마라톤대회를 통해 평화 염원을 더욱 확산하고, 남과 북, 한반도의 어린이들이 건강하고 행복하게 성장하여\n평화로운 통일 조국의 든든한 주인으로 커 갈 수 있도록 함께 해주시기 바랍니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제23회 호남마라톤",
+    "period": "2026-04-19~2026-04-19",
+    "start": "2026-04-19",
+    "end": "2026-04-19",
+    "contact": "061-375-1201",
+    "region": "광주",
+    "detailed_location": "승촌보 영산강문화관",
+    "URL": "http://www.xn--q20bn3kn1bd06bl9e.kr/",
+    "description": "선착순 800명으로 접수 받습니다.\n많은관심과 접수 부탁드립니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1321,14 +1381,38 @@
   },
   {
     "festival_name": "제4회 아산 이순신 백의종군길 마라톤",
-    "period": "2026-04-19~2026-04-19",
-    "start": "2026-04-19",
-    "end": "2026-04-19",
+    "period": "2026-04-26~2026-04-26",
+    "start": "2026-04-26",
+    "end": "2026-04-26",
     "contact": "042-638-1080",
     "region": "충남",
     "detailed_location": "아산 현충사 앞 은행나무길",
     "URL": "http://mara1080.com/event/e40f1082-eb59-40b3-9fbe-b05afe6bf741",
-    "description": "- 2026년 1월 20일(화)부터 접수예정 -\n\n선착순 7000명 (접수 및 입금자) 마감됩니다.\n\n많은 관심과 참여 바랍니다 감사합니다!",
+    "description": "- 2026년 1월 27(화) 접수마감 -\n\n접수가 마감되었습니다.\n\n많은 관심과 성원에 감사드립니다.\n\n풍성하고 멋진 대회로 준비하겠습니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제14회 광명육상연맹회장배 건강달리기",
+    "period": "2026-04-26~2026-04-26",
+    "start": "2026-04-26",
+    "end": "2026-04-26",
+    "contact": "010-2234-2248",
+    "region": "경기",
+    "detailed_location": "광명 찬빛광장(안양천)",
+    "URL": "http://gmaf.kr/",
+    "description": "일시:4월26일(일요일) 집결8시20분/출발9시\n장소:광명 찬빛광장\n참가인원:선착순 700명\n종목:5km,10km 단축마라톤\n참가비:30,000원\n접수방법:홈페이지 참가접수페이지\n먹거리와 기념품:치킨과 맥주,완주메달. 기념품은 추후 업데이트",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제20회 반기문마라톤",
+    "period": "2026-04-26~2026-04-26",
+    "start": "2026-04-26",
+    "end": "2026-04-26",
+    "contact": "1566-1936",
+    "region": "충북",
+    "detailed_location": "음성종합운동장",
+    "URL": "http://bankimoonmarathon.kr/marathon/code/8044/",
+    "description": "세계로 향해 꿈을 펼치는 자랑스러운 한국인에 대한 국민의 자긍심을 고취시키고, UN평화정신의 실천을 위해 지구촌 불우어린이 돕기 일환으로 국제연합아동기금을 모금하기 위한 반기문 마라톤 대회를 대한민국의 중심 행복한 음성에서 개최하오니 전국마라톤 동호회 여러분의 많은 참여를 기대합니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1356,15 +1440,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제21회 보성 녹차 마라톤",
-    "period": "2026-05-02~2026-05-02",
-    "start": "2026-05-02",
-    "end": "2026-05-02",
-    "contact": "042-638-1080",
-    "region": "전남",
-    "detailed_location": "보성공설운동장",
-    "URL": "http://mara1080.com/event/6c02d9f8-cbe9-4a7b-ba9d-6e1f93a18b1a",
-    "description": "접수기가 : 2026년 3월 30일까지 선착순 10,000명\n\n(신청 및 입금완료자 선착순 마감되므로 조기마감될 수 있습니다.)\n\n많은 관심과 성원바랍니다. 감사합니다!",
+    "festival_name": "속리산 문장대\nTrail running",
+    "period": "2026-04-26~2026-04-26",
+    "start": "2026-04-26",
+    "end": "2026-04-26",
+    "contact": "02-424-2195",
+    "region": "충북",
+    "detailed_location": "세조길제2주차징",
+    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250626115011&csno=20201120111538#baseline",
+    "description": "안가본 속리산 문장대 트레일러닝가장 아름답습니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1380,15 +1464,39 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "속리산 문장대\nTrail running",
-    "period": "2026-04-26~2026-04-26",
-    "start": "2026-04-26",
-    "end": "2026-04-26",
-    "contact": "02-424-2195",
-    "region": "충북",
-    "detailed_location": "세조길제2주차징",
-    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250626115011&csno=20201120111538#baseline",
-    "description": "안가본 속리산 문장대 트레일러닝가장 아름답습니다.",
+    "festival_name": "2026 구례 지리산봄길 마라톤",
+    "period": "2026-05-02~2026-05-02",
+    "start": "2026-05-02",
+    "end": "2026-05-02",
+    "contact": "061-921-6600",
+    "region": "전남",
+    "detailed_location": "구례공설운동장",
+    "URL": "http://grrun.kr",
+    "description": "선착순 모집 마감",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 경기 라이프마라톤",
+    "period": "2026-05-02~2026-05-02",
+    "start": "2026-05-02",
+    "end": "2026-05-02",
+    "contact": "02-364-1986",
+    "region": "경기",
+    "detailed_location": "하남 미사경정공원",
+    "URL": "http://lifemarathon.co.kr/",
+    "description": "전 세대가 함께 경쟁하고 즐기는\n경기 라이프마라톤",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제21회 보성 녹차 마라톤",
+    "period": "2026-05-02~2026-05-02",
+    "start": "2026-05-02",
+    "end": "2026-05-02",
+    "contact": "042-638-1080",
+    "region": "전남",
+    "detailed_location": "보성공설운동장",
+    "URL": "http://mara1080.com/event/6c02d9f8-cbe9-4a7b-ba9d-6e1f93a18b1a",
+    "description": "접수기가 : 2026년 3월 30일까지 선착순 10,000명\n\n(신청 및 입금완료자 선착순 마감되므로 조기마감될 수 있습니다.)\n\n많은 관심과 성원바랍니다. 감사합니다!",
     "category": "마라톤온라인"
   },
   {
@@ -1428,6 +1536,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "커피 빵빵런2026",
+    "period": "2026-05-09~2026-05-09",
+    "start": "2026-05-09",
+    "end": "2026-05-09",
+    "contact": "02-0000-0000",
+    "region": "강원",
+    "detailed_location": "강릉 경포호수광장",
+    "URL": "http://coffeebbangrun.com/",
+    "description": "완주하면 커피, 빵, 젤라또가 다 내 거!\n완주 후 강릉을 대표하는 빵, 커피,\n순두부 젤라또를 즐기는 커피 빵빵런\n\n1. 행사명 : 커피 빵빵런2026\n2. 일정 : 5월 9일(토) - 10(일) *2일 중 하루 선택\n3. 장소 : 강릉 경포호수광장\n4. 코스 : 10K, 5K\n5. 대상 : 빵, 커피 또는 러닝을 좋아하는 인구\n*참가권 수량이 모두 소진될 경우, 조기마감될 수 있습니다.",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "제19회 대전 한밭울트라마라톤",
     "period": "2026-05-09~2026-05-09",
     "start": "2026-05-09",
@@ -1464,18 +1584,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "소아암환우돕기 제23회 서울시민마라톤",
-    "period": "2026-05-10~2026-05-10",
-    "start": "2026-05-10",
-    "end": "2026-05-10",
-    "contact": "02-2647-4488",
-    "region": "서울",
-    "detailed_location": "여의도 한강 물빛광장",
-    "URL": "http://soaam.runningdr.co.kr/",
-    "description": "-수익금 전액을 소아암환우에게 치료비로 기부하는 자선행사입니다\n-2025년말 현재 8억 7천 1백만원을 기부하여 왔습니다\n-기부대상 소아암환우는 삼성병원, 세브란스병원등에서 추천받아 기부대상자로 선정을 합니다",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 무의도구석구석 국제트레일런",
     "period": "2026-05-10~2026-05-10",
     "start": "2026-05-10",
@@ -1488,15 +1596,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "2026 식품안전 마라톤",
-    "period": "2026-05-16~2026-05-16",
-    "start": "2026-05-16",
-    "end": "2026-05-16",
-    "contact": "042-638-1080",
-    "region": "대전",
-    "detailed_location": "대전엑스포시민광장",
-    "URL": "http://mara1080.com/event/29a34ee9-32a9-4a3b-b92f-37b3772cc183",
-    "description": "2/12(목) 오전 10시부터 접수시작~!\n\n선착순 5000명 접수 및 입금자 선착순 마감됩니다.\n\n위 기간보다 조기 마감될 수 있습니다.\n\n올림픽 금메달리스트 황영조 감독 / 국민마라토너 이봉주 선수\n\n팬사인회가 마련되어있으며, 최고급 완주메달과\n\n완주 후 다양한 간식꾸러미가 증정됩니다.\n\n많은 관심과 참여바랍니다. 감사합니다!",
+    "festival_name": "소아암환우돕기 제23회 서울시민마라톤",
+    "period": "2026-05-10~2026-05-10",
+    "start": "2026-05-10",
+    "end": "2026-05-10",
+    "contact": "02-2647-4488",
+    "region": "서울",
+    "detailed_location": "여의도 한강 물빛광장",
+    "URL": "http://soaam.runningdr.co.kr/",
+    "description": "-수익금 전액을 소아암환우에게 치료비로 기부하는 자선행사입니다\n-2025년말 현재 8억 7천 1백만원을 기부하여 왔습니다\n-기부대상 소아암환우는 삼성병원, 세브란스병원등에서 추천받아 기부대상자로 선정을 합니다",
     "category": "마라톤온라인"
   },
   {
@@ -1521,6 +1629,18 @@
     "detailed_location": "석관동 우이천 다목적광장",
     "URL": "http://www.seoul-hangang.kr",
     "description": "서울한강울트라마라톤대회는 안전한 주로코스에서\n참가선수여러분을 위하여 달리는데 전념할수있도록 최선을 다 하겠습니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 식품안전 마라톤",
+    "period": "2026-05-17~2026-05-17",
+    "start": "2026-05-17",
+    "end": "2026-05-17",
+    "contact": "042-638-1080",
+    "region": "대전",
+    "detailed_location": "대전엑스포시민광장",
+    "URL": "http://mara1080.com/event/29a34ee9-32a9-4a3b-b92f-37b3772cc183",
+    "description": "2/20 (금) 오전 10시부터 접수시작~!\n\n선착순 5000명 접수 및 입금자 선착순 마감됩니다.\n\n위 기간보다 조기 마감될 수 있습니다.\n\n올림픽 금메달리스트 황영조 감독 / 국민마라토너 이봉주 선수\n\n팬사인회가 마련되어있으며, 최고급 완주메달과\n\n완주 후 다양한 간식꾸러미가 증정됩니다.\n\n많은 관심과 참여바랍니다. 감사합니다!",
     "category": "마라톤온라인"
   },
   {
@@ -1560,15 +1680,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제18회 여명국제마라톤",
-    "period": "2026-05-30~2026-05-30",
-    "start": "2026-05-30",
-    "end": "2026-05-30",
-    "contact": "02-3210-1666",
+    "festival_name": "버닝런 2026",
+    "period": "2026-05-25~2026-05-25",
+    "start": "2026-05-25",
+    "end": "2026-05-25",
+    "contact": "070-7706-1011",
     "region": "서울",
-    "detailed_location": "서울 뚝섬한강공원 수변광장",
-    "URL": "http://www.dawnmarathon.com",
-    "description": "2026년 5월30일(토) 제18회 여명국제마라톤을\n서울 뚝섬한강공원 수변광장에서 개최하오니\n동호회 및 달림이 여러분의 많은 참여와 성원 부탁드립니다.",
+    "detailed_location": "한강공원 여의도 물빛광장",
+    "URL": "http://www.burningrun.co.kr",
+    "description": "대회명:버닝런2026\n대회일시:2026년5월25일(월)대체공휴일\n대회장소:한강여의도 물빛광장\n대회코스: 5km , 7km , 10km",
     "category": "마라톤온라인"
   },
   {
@@ -1581,6 +1701,18 @@
     "detailed_location": "거제시 동부면 거제중앙로288",
     "URL": "http://geoje100.creatorlink.net/",
     "description": "『거제100K』는 2013년 첫 발을 내딛으며\n'거제의 꿈' 을 향해 끊이없이 달려가는 국내 정통 트레일러닝대회입니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제18회 여명국제마라톤",
+    "period": "2026-05-30~2026-05-30",
+    "start": "2026-05-30",
+    "end": "2026-05-30",
+    "contact": "02-3210-1666",
+    "region": "서울",
+    "detailed_location": "서울 뚝섬한강공원 수변광장",
+    "URL": "http://www.dawnmarathon.com",
+    "description": "2026년 5월30일(토) 제18회 여명국제마라톤을\n서울 뚝섬한강공원 수변광장에서 개최하오니\n동호회 및 달림이 여러분의 많은 참여와 성원 부탁드립니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1620,18 +1752,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제9회남한산성\nTRAILRUNNING",
-    "period": "2026-06-06~2026-06-06",
-    "start": "2026-06-06",
-    "end": "2026-06-06",
-    "contact": "02-424-2195",
-    "region": "서울",
-    "detailed_location": "마천역 1번출구",
-    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250911090719&csno=20220731195207#baseline",
-    "description": "더울때는 짤보 강한 훈련을 역사가 살아 숨쉬는 남한산성에서 합니다.\n유네스코 등재 기념과 남한산성의 성광에 얽힌 이야기를 풀어보는 달리기입니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026년 독도수호를 위한 동호인마라톤",
     "period": "2026-05-31~2026-05-31",
     "start": "2026-05-31",
@@ -1641,6 +1761,18 @@
     "detailed_location": "경주시 서천체육광장",
     "URL": "http://경주시육상연맹.com",
     "description": "하프코스, 10km, 28릴레이(주자4명,7km씩)\n재미있는대회 작지만 알찬 대회 , 를 만들겠습니다. 우리 달림이들이 합심하여, 늘 가까이 있는대회가 되도록 노력하겠습니다. 많은 참여 부탁드립니다.",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제9회남한산성\nTRAILRUNNING",
+    "period": "2026-06-06~2026-06-06",
+    "start": "2026-06-06",
+    "end": "2026-06-06",
+    "contact": "02-424-2195",
+    "region": "서울",
+    "detailed_location": "마천역 1번출구",
+    "URL": "http://www.koreatrail.net/home/main.php?link=event&einc=eapp&opp=20250911090719&csno=20220731195207#baseline",
+    "description": "더울때는 짤보 강한 훈련을 역사가 살아 숨쉬는 남한산성에서 합니다.\n유네스코 등재 기념과 남한산성의 성광에 얽힌 이야기를 풀어보는 달리기입니다.",
     "category": "마라톤온라인"
   },
   {
@@ -1700,7 +1832,7 @@
     "region": "서울",
     "detailed_location": "상암월드컵경기장 평화광장",
     "URL": "http://www.sbsa.or.kr",
-    "description": "장애인과 비장애인이 함께하는 '제12회 시각장애인과 함께하는 어울림 마라톤 대회'에 여러분을 초대합니다.\n푸른 여름의 시작과 함께 모두 하나 되어 즐길 수 있는 마라톤 축제를 준비했습니다.\n\n도심 속 자연을 가슴에 담고 호흡하는 코스에서 건강을 다지는\n힐링 마라톤 축제의 주인공이 되어 보세요.\n\n○대회명: 제12회 시각장애인과 함께하는 어울림 마라톤 대회\n○대회일: 2025년 06월 13일 (토) 08시\n○장소: 상암월드컵경기장 평화의공원\n○기념품: 완주메달, 르꼬끄티셔츠, 포카리스웨트, 본도시락 컵밥 등",
+    "description": "장애인과 비장애인이 함께하는 '제12회 시각장애인과 함께하는 어울림 마라톤 대회'에 여러분을 초대합니다.\n푸른 여름의 시작과 함께 모두 하나 되어 즐길 수 있는 마라톤 축제를 준비했습니다.\n\n도심 속 자연을 가슴에 담고 호흡하는 코스에서 건강을 다지는\n힐링 마라톤 축제의 주인공이 되어 보세요.\n\n○대회명: 제12회 시각장애인과 함께하는 어울림 마라톤 대회\n○대회일: 2025년 06월 13일 (토) 08시\n○장소: 상암월드컵경기장 평화의공원\n○기념품: 완주메달, 르꼬끄스포르티브 티셔츠, 포카리스웨트, 본도시락 컵밥 등",
     "category": "마라톤온라인"
   },
   {
@@ -1716,6 +1848,18 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제22회 영덕해변전국마라톤",
+    "period": "2026-06-14~2026-06-14",
+    "start": "2026-06-14",
+    "end": "2026-06-14",
+    "contact": "010-5944-2686",
+    "region": "경북",
+    "detailed_location": "고래불해수욕장",
+    "URL": "http://www.runmp.kr",
+    "description": "",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "제25회 충주마라톤",
     "period": "2026-06-20~2026-06-20",
     "start": "2026-06-20",
@@ -1728,15 +1872,15 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제22회 영덕해변전국마라톤",
-    "period": "2026-06-14~2026-06-14",
-    "start": "2026-06-14",
-    "end": "2026-06-14",
-    "contact": "010-5944-2686",
-    "region": "경북",
-    "detailed_location": "고래불해수욕장",
-    "URL": "http://www.runmp.kr",
-    "description": "",
+    "festival_name": "2026 람사르습지 밤섬런",
+    "period": "2026-06-21~2026-06-21",
+    "start": "2026-06-21",
+    "end": "2026-06-21",
+    "contact": "02-332-3247",
+    "region": "서울",
+    "detailed_location": "여의도 한강공원 물빛무대",
+    "URL": "http://bamseomrun.kr",
+    "description": "밤섬은 1968년 개뱔을 위해 살던 사람을 강제로 쫓아내고 폭파되어 한강에 잠겼습니다. 하지만 자연의 회복력으로 퇴적이 계속 되어 철새도래지가 되었고, 2012년 6월 21일 서울의 유일한 람사르습지로 등재됐습니다. 이날을 기념해 밤섬런을 개최합니다. 치유와 회복의 생마라톤을 지향합니다",
     "category": "마라톤온라인"
   },
   {
@@ -2028,6 +2172,42 @@
     "category": "마라톤온라인"
   },
   {
+    "festival_name": "제24회 성우하이텍배 KNN환경마라톤",
+    "period": "2026-03-22~2026-03-22",
+    "start": "2026-03-22",
+    "end": "2026-03-22",
+    "contact": "1522-4897",
+    "region": "부산",
+    "detailed_location": "BEXCO제1전시장 3홀",
+    "URL": "http://marathon.knn.co.kr",
+    "description": "10km, 5km",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "2026 HEAT & RUN",
+    "period": "2026-03-22~2026-03-22",
+    "start": "2026-03-22",
+    "end": "2026-03-22",
+    "contact": "070-7725-3463",
+    "region": "서울",
+    "detailed_location": "상암동 평화의공원",
+    "URL": "http://run.ytn.co.kr",
+    "description": "Bring the Heat, Run together!",
+    "category": "마라톤온라인"
+  },
+  {
+    "festival_name": "제3회 불패 마라톤",
+    "period": "2026-03-22~2026-03-22",
+    "start": "2026-03-22",
+    "end": "2026-03-22",
+    "contact": "02-569-5551",
+    "region": "서울",
+    "detailed_location": "여의도공원 문화의 마당",
+    "URL": "http://bulpaerun.com/",
+    "description": "제3회 불패 마라톤에서 새로운 도전을 해보시고, 한강변을 달리며 지인.가족과 좋은 추억을 쌓으시며\n각자 페이스에 맞춰 안전하게 달려주시고, 건강과 행복이 가득하시길 기원드립니다.",
+    "category": "마라톤온라인"
+  },
+  {
     "festival_name": "2026 금강울트라마라톤",
     "period": "2026-03-28~2026-03-28",
     "start": "2026-03-28",
@@ -2052,18 +2232,6 @@
     "category": "마라톤온라인"
   },
   {
-    "festival_name": "제20회 반기문마라톤",
-    "period": "2026-04-26~2026-04-26",
-    "start": "2026-04-26",
-    "end": "2026-04-26",
-    "contact": "1566-1936",
-    "region": "충북",
-    "detailed_location": "음성종합운동장",
-    "URL": "http://bankimoonmarathon.kr/marathon/code/8044/",
-    "description": "세계로 향해 꿈을 펼치는 자랑스러운 한국인에 대한 국민의 자긍심을 고취시키고, UN평화정신의 실천을 위해 지구촌 불우어린이 돕기 일환으로 국제연합아동기금을 모금하기 위한 반기문 마라톤 대회를 대한민국의 중심 행복한 음성에서 개최하오니 전국마라톤 동호회 여러분의 많은 참여를 기대합니다.",
-    "category": "마라톤온라인"
-  },
-  {
     "festival_name": "2026 백양산숲길건강달리기",
     "period": "2026-05-31~2026-05-31",
     "start": "2026-05-31",
@@ -2074,18 +2242,6 @@
     "URL": "http://www.bsama.co.kr/",
     "description": "(사)부산아마추어마라톤클럽연맹",
     "category": "마라톤온라인"
-  },
-  {
-    "category": "한국관광공사",
-    "festival_name": "태백산 눈축제",
-    "period": "2026-01-31~2026-02-08",
-    "start": "2026-01-31",
-    "end": "2026-02-08",
-    "region": "강원특별자치도 태백시",
-    "detailed_location": "강원특별자치도 태백시 소도동 180 태백산국립공원 일원",
-    "contact": "033-553-6900",
-    "description": "제33회 태백산 눈축제는 「2026 REAL 태백산 눈축제」를 주제로 개최되며, 태백산의 아름다운 겨울 자연을 배경으로 한 대형 눈조각 전시를 비롯해 남녀노소 누구나 참여할 수 있는 다양한 체험형 프로그램 등 다채로운 콘텐츠를 선보일 예정이다. 특히 눈과 겨울을 테마로 한 볼거리와 즐길 거리를 통해 방문객들이 진짜 겨울의 매력과 즐거움을 체감할 수 있다.\n\n[행사내용]\n1. 메인프로그램 : 눈조각 전시, 태백산 전시관 , 대형 눈썰매장, 스케이트장, 태백산 힐링체험관 등\n2. 부대프로그램 : 태백산 전국눈꽃등반대회, 전국 대학생 눈조각 경연대회, 백패킹, 미니 동계 올림픽 등\n3. 소비자 참여 프로그램 : 이글루카페테리아 등",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=af789025-8035-4c59-8b84-5a9e0733d134&cntntsNm=%ED%83%9C%EB%B0%B1%EC%82%B0%EB%88%88%EC%B6%95%EC%A0%9C"
   },
   {
     "category": "한국관광공사",
@@ -2110,18 +2266,6 @@
     "contact": "010-5433-8196",
     "description": "남당항과 천수만 일원에서 12월부터 이듬해 3월 사이에 주로 잡히는 새조개는 살이 매우 통통하고 커서 제철을 이루고 있다. 새조개는 쫄깃하고 담백한 감칠맛이 특징이며, 단백질과 철분, 타우린 및 필수 아미노산 등의 영양소가 풍부하며 많은 이들의 사랑을 받고 있다. 새조개축제는 한 겨울 동안 열리고 있으며, 많은 관광객이 찾고 있다.\n\n[행사내용]\n1. 메인프로그램 : 국내 정상급 가수(양지원 ,나현민 등)들의 화려한 무대, 새조개 까기대회, 관광객 노래자랑 등\n2. 볼거리 : 다채로운 야시장 운영 등",
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=86e5f381-79ef-4581-8676-a1e5b1610f35&cntntsNm=%ED%99%8D%EC%84%B1%EB%82%A8%EB%8B%B9%ED%95%AD%EC%83%88%EC%A1%B0%EA%B0%9C%EC%B6%95%EC%A0%9C"
-  },
-  {
-    "category": "한국관광공사",
-    "festival_name": "평창송어축제",
-    "period": "2026-01-09~2026-02-09",
-    "start": "2026-01-09",
-    "end": "2026-02-09",
-    "region": "강원특별자치도 평창군",
-    "detailed_location": "강원특별자치도 평창군 진부면 경강로 3562 ",
-    "contact": "033-336-4000",
-    "description": "우리 조상들은 매년 겨울이 되면 눈이 많이 내려 옆집까지 서로 줄을 메어놓고, 그 줄을 따라 눈 터널을 만들어 왕래를 하였고, 차가운 강바람에 개여울이 일찍 합강(合江)되면 강속의 큰 바위를 망치로 두드려 겨울 물고기를 사냥해서 한끼니를 때우던 그 어렵던 시절이 있었다. 바로 이곳에 우리 선조들의 삶의 핍박을 축제로 승화시켜 눈과, 얼음, 송어가 함께하는 겨울이야기 라는 주제로 매년 12월말부터 1월말까지 평창송어축제가 한마당 펼쳐진다. 얼음 위에서 보면 오대천에서 노니는 어류가 투명하게 보이는 가운데 송어낚시의 짜릿한 손맛을 느끼며 다양한 겨울체험 행사와 함께 진정한 겨울축제의 즐거움을 함께 느낄 수 있다.\n\n[행사내용]\n얼음낚시, 텐트낚시, 어린이낚시터, 황금송어맨손잡기, 얼음광장체험놀이(눈썰매, 스노우래프팅, 얼음자전거, 아르고탑승체험, 스케이트등)\n\n* 이용요금\n텐트낚시(종합권) 49,000원 / 텐트낚시 초등학생(종합권) 43,000원\n텐트낚시 39,000원 / 텐트낚시 초등학생 30,000원\n얼음낚시(종합권) 43,000원 / 얼음낚시 초등학생(종합권) 35,000원\n얼음낚시 25,000원 / 얼음낚시 초등학생 20,000원\n실내낚시 20,000원 / 맨손잡기 20,000원\n놀이시설(종합권) 30,000원 / 산송어 20,000원",
-    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=e79ad504-4e44-46d4-950c-cff9292665c1&cntntsNm=%ED%8F%89%EC%B0%BD%EC%86%A1%EC%96%B4%EC%B6%95%EC%A0%9C"
   },
   {
     "category": "한국관광공사",
@@ -2173,6 +2317,18 @@
   },
   {
     "category": "한국관광공사",
+    "festival_name": "울진대게와 붉은대게 축제",
+    "period": "2026-02-27~2026-03-02",
+    "start": "2026-02-27",
+    "end": "2026-03-02",
+    "region": "경상북도 울진군",
+    "detailed_location": "경상북도 울진군 후포면 울진대게로 236-14 후포항 왕돌초광장",
+    "contact": "054-789-5486",
+    "description": "경북 울진군의 특산물인 대게자원 보호와 홍보, 판매를 위한 <울진대게와 붉은대게 축제>가 울진군 후포항 일원에서 개최된다. 울진 지역의 대표적인 겨울 먹거리 축제로 울진군 주요수산 특산물인 울진대게와 붉은대게 우수성을 널리 알리고 울진군의 자치 경쟁력을 강화하기 위해 시행하는 행사이다. 축제는 후포항 왕돌초광장에서 개막식을 갖고 축제기간 다양한 행사로 꾸며진다.\n\n[행사내용]\n1. 개막행사 : 개막식 및 축하공연\n2. 공연행사 : 울진음악협회, 지역예술인 공연\n3. 문화행사 : 게 줄당기기(읍면대항전). 게판 끼자랑대회\n4. 체험행사 : 울진대게 경매, 붉은대게 낚시, 요트 승선 체험 등\n5. 부대행사 : 현정화와 함께하는 탁구교실, 게장비빔밥 퍼포먼스, 지역 농수특산물 판매장 등",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=98d02557-f042-4423-aabb-112b599b7eec&cntntsNm=%EC%9A%B8%EC%A7%84%EB%8C%80%EA%B2%8C%EC%99%80%EB%B6%89%EC%9D%80%EB%8C%80%EA%B2%8C%EC%B6%95%EC%A0%9C"
+  },
+  {
+    "category": "한국관광공사",
     "festival_name": "양양 낙산해변 달빛 모닥불축제",
     "period": "2026-02-28~2026-03-01",
     "start": "2026-02-28",
@@ -2206,6 +2362,18 @@
     "contact": "삼례농협 063-291-2711\n완주문화재단 063-262-3955",
     "description": "완주삼례딸기대축제는 전라북도 완주군 삼례읍 일원에서 매년 개최되는 지역 대표 농·특산물 연계 축제이다. 본 축제는 삼례 지역의 대표 농산품인 딸기를 중심으로 생산·유통·체험·관광을 연계한 체험형 축제로 구성되어 있으며, 지역 농가의 소득 증대와 지역 관광 활성화를 목적으로 추진된다. 축제 기간 동안 딸기 수확 체험, 딸기 가공식품 및 디저트 판매, 지역 먹거리 부스 운영, 주민 참여형 체험 프로그램, 공연 및 부대행사 등이 운영된다. 다양한 체험 콘텐츠와 문화 프로그램을 통해 방문객의 체류 시간을 확대하고 지역 내 소비를 유도하는 구조로 기획되어 있으며, 삼례의 대표 농산품인 딸기의 인지도 제고와 지역 브랜드 이미지 강화를 도모하는 지역 밀착형 문화관광 행사이다.\n\n[행사내용]\n1. 메인프로그램 : 딸기퍼포먼스, 딸기꿈나무자랑대회, 개막식 및 축하공연, 예술공연, EDM티 등\n2. 부대프로그램 : 딸기 판매장, 딸기 관련 체험, 어린이 놀이터, 베이커리존, 푸드존, 스탬프이벤트 등\n3. 소비자 참여 프로그램 : 딸기스페셜티커피, 딸기테라리움, 딸기풍선, 딸기 비누 만들기 등",
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=6a467ed2-f522-4635-9102-ff491755ff9c&cntntsNm=%EC%99%84%EC%A3%BC%EC%82%BC%EB%A1%80%EB%94%B8%EA%B8%B0%EB%8C%80%EC%B6%95%EC%A0%9C"
+  },
+  {
+    "category": "한국관광공사",
+    "festival_name": "진안고원 운장산 고로쇠축제",
+    "period": "2026-03-14~2026-03-15",
+    "start": "2026-03-14",
+    "end": "2026-03-15",
+    "region": "전북특별자치도 진안군",
+    "detailed_location": "전북특별자치도 진안군 주천면 대불리 75-1 운일암반일암 삼거광장",
+    "contact": "063-430-2393",
+    "description": "추운 겨울이 지나고 봄이 다가오며 진안고원 운장산 고로쇠가 나오는 시기가 왔다. 1년 중 봄에만 마실 수 있는 자연 음료인 진안고원 운장산 고로쇠는 해발 600m 이상의 고로쇠 군락지에서 주로 나온다. 고로쇠 수액은 기온이 낮은 밤에 고로쇠나무의 뿌리가 땅속의 물을 빨아드려 줄기 속을 수액으로 채우고, 밤이 자나고 낮이 되어 기온이 올라가고 햇볕을 받으면 줄기 안의 수분과 공기가 팽창하고 압력이 줄어들며 고로쇠 줄기 안의 수분이 밖으로 나가려고 하는데 이때 천공이라는 구멍을 뚫게 되면 여기서 고로쇠 수액이 나온다. 기온 일교차가 크면 클수록 더 많은 양의 수액을 채취할 수 있는데, 진안고원은 남한 유일의 고원지대로 일교차가 커 좋은 품질의 고로쇠 수액을 채취하기 좋은 기후를 가지고 있다.\n\n[행사내용]\n1. 메인프로그램 : 출발! 고로쇠 숲 탐험대, 고로쇠 고추장 만들기, 고로쇠 고원길 걷기\n2. 부대프로그램 : 고로쇠 한마당, 중평굿, 가족공연(마술, 버블 등), 노래방 가요제 등\n3. 소비자 참여 프로그램 : 고로쇠 달고나 만들기, 고로쇠 찐빵 체험, 고로쇠 스탬프 투어, 고로쇠 빨리마시기, 고로쇠 OX퀴즈 등",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=ee1a067a-6d05-4066-8b4a-1fb8003409d9&cntntsNm=%EC%A7%84%EC%95%88%EA%B3%A0%EC%9B%90%EC%9A%B4%EC%9E%A5%EC%82%B0%EA%B3%A0%EB%A1%9C%EC%87%A0%EC%B6%95%EC%A0%9C"
   },
   {
     "category": "한국관광공사",
@@ -2281,6 +2449,18 @@
   },
   {
     "category": "한국관광공사",
+    "festival_name": "어린이·가족 예술축제 <톡톡>",
+    "period": "2026-05-02~2026-05-03",
+    "start": "2026-05-02",
+    "end": "2026-05-03",
+    "region": "서울 양천구",
+    "detailed_location": "서울특별시 양천구 남부순환로64길 2 (신월동) 서울문화예술교육센터 양천",
+    "contact": "02-2697-0014",
+    "description": "서울문화재단에서 5월 가정의 달을 맞아 신규 추진하는 서울 최초의 기초예술 장르 중점 어린이·가족예술 축제로, 엄마아빠와 아이, 온 가족이 함께하는 첫 번째 예술 경험을 '톡톡' 두드린다. 시각예술 체험형 야외 캔버스 '물감 톡톡', 무엇이든 상상하며 놀이할 수 있는 야외 팝업 예술놀이터 '감각 톡톡', 함께 몸을 움직일 수 있는 다양한 장르 공연 '리듬 톡톡' 등 다양한 장르의 공연, 체험, 워크숍 프로그램으로 가득하다.\n\n[행사내용]\n1. 야외 퍼레이드 및 다양한 장르 공연: 모든 사람이 자유롭게 관람 가능한 공연 프로그램(대형 인형 퍼레이드극, 서커스 공연, 야외 클래식 앙상블 공연, 어린이 연극, 야외 발레 공연 등) 2. 예술놀이터: 야외에서 누구나 참여가능한 체험형 움직임 놀이터(시각 창작 캔버스 놀이터, 야외 팝업 예술놀이터, 퍼레이드 오브제 만들기 워크숍, 공연 퍼레이드 등) 3. 예술 장르 워크숍: 사전신청 및 현장신청을 통해 진행하는 예술교육 체험 프로그램(조부모 가족과 함께하는 발레 워크숍, 영유아를 위한 클래식 콘서트, 아빠와 함께하는 왈츠 파티, 영유아 오감체험 음악워크숍 등) 4. 엄마아빠 대상 프로그램: 육아에서 잠시 해방되어 휴식을 취할 수 있도록 찻자리, 민화 채색 워크숍, 아트키트 프로그램 제공 5. 가족 대상 부대 프로그램: 우리가족 얼굴 그리기 프로그램, 포토그래퍼가 찍어주는 가족 스냅, 서서울호수공원 아트레킹 등 6. 이벤트 및 먹거리 프로그램: 현장 이벤트 참여 시 제공하는 음료 카페테리아, 솜사탕 부스",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=5720706a-565b-4fe9-a988-592e664e8ef2&cntntsNm=%EC%96%B4%EB%A6%B0%EC%9D%B4%EA%B0%80%EC%A1%B1%EC%98%88%EC%88%A0%EC%B6%95%EC%A0%9C%ED%86%A1%ED%86%A1"
+  },
+  {
+    "category": "한국관광공사",
     "festival_name": "영주 한국선비문화축제",
     "period": "2026-05-02~2026-05-05",
     "start": "2026-05-02",
@@ -2290,6 +2470,18 @@
     "contact": "054-630-8703",
     "description": "영주 한국선비문화축제는 선비정신의 본향인 영주에서 전통과 현대, 사람과 사람이 자연스럽게 어우러지는 대한민국 대표 인문·체험형 문화축제이다. 영주가 지닌 깊은 역사와 풍부한 선비문화 자산을 바탕으로 전통문화를 보고, 듣고, 느끼며 직접 체험할 수 있는 다채로운 프로그램을 통해 관람객을 맞이한다. 의례와 예절, 생활문화, 공연과 전시, 참여형 체험을 아우르는 풍성한 콘텐츠를 구성하여 관람객이 세대와 경계를 넘어 자연스럽게 교류하고 함께 즐길 수 있는 열린 문화의 장을 조성한다. 이를 통해 사람 중심의 만남과 살아 있는 전통의 가치를 일상 속에서 새롭게 발견하고, 잊고 지냈던 감성과 공동체의 의미를 되새길 수 있다.\n\n[행사내용]\n1. 특별프로그램 : 고유제, 개폐막식, 문화공연(전통 퍼포먼스, 한국무용, 국악공연) 등\n2. 무대프로그램 : 지역문화예술인공연, 마당극 등\n3. 체험프로그램 : 한복 체험, 다도, 전통 활쏘기, 서예 체험, 탁본, 전통예절교실, 전통 화장 및 가체 체험, 포토 부스 등\n4. 전시프로그램 : 선비 로드, 선비 북 페스티벌, 선비 공간 전시 등\n5. 기타프로그램 : 지역상생동행마켓, 선비 장터 등",
     "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=09b23de6-e3cc-4ea0-b102-91fe01a17e4a&cntntsNm=%EC%98%81%EC%A3%BC%ED%95%9C%EA%B5%AD%EC%84%A0%EB%B9%84%EB%AC%B8%ED%99%94%EC%B6%95%EC%A0%9C"
+  },
+  {
+    "category": "한국관광공사",
+    "festival_name": "연등회",
+    "period": "2026-05-16~2026-05-17",
+    "start": "2026-05-16",
+    "end": "2026-05-17",
+    "region": "서울 종로구",
+    "detailed_location": "서울특별시 종로구 종로 99 (종로2가) ",
+    "contact": "02-2011-1740",
+    "description": "연등회는 동대문운동장-조계사에 이르는 연등행렬을 비롯하여 전통문화마당, 어울림마당(연등법회), 회향한마당(대동한마당) 등으로 진행된다. 1,200여 년 오랜 역사와 살아있는 문화유산으로 전승하고 있는 연등회는 무형유산의 가치를 인정받아 2012년 4월 국가무형문화재로 지정되었다. 자발적인 공동체의 가치와 개개인의 창의성이 담긴 세대전승, 그리고 다양한 사람들의 참여 · 배려 · 평등의 가치를 세계적으로 인정받아 2020년 12월 유네스코 인류무형문화유산 대표목록에 등재되었다.\n\n[행사내용]\n1. 메인프로그램 : 연등행렬, 전통문화마당\n2. 부대프로그램 : 전통등전시회, 어울림마당, 연등놀이\n3. 소비자 참여 프로그램 : 전통문화마당\n4. 기타 내용 : 공연마당, 대동한마당, 광화문점등식",
+    "URL": "https://korean.visitkorea.or.kr/kfes/detail/fstvlDetail.do?fstvlCntntsId=11c0c030-bbf8-4544-95a3-3c21862626bc&cntntsNm=%EC%97%B0%EB%93%B1%ED%9A%8C"
   },
   {
     "category": "한국관광공사",
